@@ -338,6 +338,7 @@ PRODUCT_PACKAGES += \
     OPlusExtrasResCommon \
     OPlusFrameworksResCommon \
     OPlusSettingsResCommon \
+    OPlusSystemUIResCommon \
     StagSettingsProviderResCommon \
     WifiResTarget
 
