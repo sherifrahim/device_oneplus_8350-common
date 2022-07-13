@@ -72,6 +72,16 @@ public final class FileUtils {
     }
 
     /**
+     * Checks whether the given file is readable
+     *
+     * @return true if readable, false if not
+     */
+    public static boolean isFileReadable(String fileName) {
+     final File file = new File(fileName);
+     return file.exists() && file.canRead();
+    }
+
+    /**
      * Checks whether the given file is writable
      *
      * @return true if writable, false if not
@@ -80,6 +90,7 @@ public final class FileUtils {
         final File file = new File(fileName);
         return file.exists() && file.canWrite();
     }
+
 
     /**
      * Reads the first line of text from the given file.

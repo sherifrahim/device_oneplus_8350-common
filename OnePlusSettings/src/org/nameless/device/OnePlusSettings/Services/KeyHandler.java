@@ -17,15 +17,31 @@
 
 package org.nameless.device.OnePlusSettings.Services;
 
+import android.content.BroadcastReceiver;   
 import android.content.Context;
+import android.content.Intent;
+import android.content.IntentFilter;
 import android.hardware.input.InputManager;
 import android.media.AudioManager;
 import android.os.VibrationEffect;
+import android.provider.Settings;
+import android.util.Log;
 import android.view.KeyEvent;
 
 import androidx.annotation.Keep;
 
 import com.android.internal.os.DeviceKeyHandler;
+
+import java.util.Arrays;
+
+import org.nameless.device.OnePlusSettings.Constants;
+import org.nameless.device.OnePlusSettings.SliderControllerBase;
+import org.nameless.device.OnePlusSettings.slider.BrightnessController;
+import org.nameless.device.OnePlusSettings.slider.FlashlightController;
+import org.nameless.device.OnePlusSettings.slider.NotificationController;
+import org.nameless.device.OnePlusSettings.slider.NotificationRingerController;
+import org.nameless.device.OnePlusSettings.slider.RingerController;
+import org.nameless.device.OnePlusSettings.slider.RotationController;
 
 import org.nameless.device.OnePlusSettings.Utils.FileUtils;
 import org.nameless.device.OnePlusSettings.Utils.VibrationUtils;
@@ -34,57 +50,99 @@ import org.nameless.device.OnePlusSettings.Utils.VolumeUtils;
 @Keep
 public class KeyHandler implements DeviceKeyHandler {
 
-    // Slider key codes
-    private static final String MODE_NORMAL = "3";
-    private static final String MODE_VIBRATION = "2";
-    private static final String MODE_SILENCE = "1";
+    private static final String TAG = "KeyHandler";
 
     private final Context mContext;
-    private final AudioManager mAudioManager;
-    private final InputManager mInputManager;
+    private final NotificationController mNotificationController;
+    private final FlashlightController mFlashlightController;
+    private final BrightnessController mBrightnessController;
+    private final RotationController mRotationController;
+    private final RingerController mRingerController;
+    private final NotificationRingerController mNotificationRingerController;
 
-    private String lastCode;
+    private SliderControllerBase mSliderController;
+
+    private final BroadcastReceiver mSliderUpdateReceiver = new BroadcastReceiver() {
+        @Override
+        public void onReceive(Context context, Intent intent) {
+            int usage = intent.getIntExtra(Constants.EXTRA_SLIDER_USAGE, 0);
+            int[] actions = intent.getIntArrayExtra(Constants.EXTRA_SLIDER_ACTIONS);
+
+            Log.d(TAG, "update usage " + usage + " with actions " +
+                    Arrays.toString(actions));
+
+            if (mSliderController != null) {
+                mSliderController.reset();
+            }
+
+            switch (usage) {
+                case NotificationController.ID:
+                    mSliderController = mNotificationController;
+                    mSliderController.update(actions);
+                    break;
+                case FlashlightController.ID:
+                    mSliderController = mFlashlightController;
+                    mSliderController.update(actions);
+                    break;
+                case BrightnessController.ID:
+                    mSliderController = mBrightnessController;
+                    mSliderController.update(actions);
+                    break;
+                case RotationController.ID:
+                    mSliderController = mRotationController;
+                    mSliderController.update(actions);
+                    break;
+                case RingerController.ID:
+                    mSliderController = mRingerController;
+                    mSliderController.update(actions);
+                    break;
+                case NotificationRingerController.ID:
+                    mSliderController = mNotificationRingerController;
+                    mSliderController.update(actions);
+                    break;
+            }
+
+            mSliderController.restoreState();
+        }
+    };
 
     public KeyHandler(Context context) {
         mContext = context;
 
-        mAudioManager = mContext.getSystemService(AudioManager.class);
-        mInputManager = mContext.getSystemService(InputManager.class);
+        mNotificationController = new NotificationController(mContext);
+        mFlashlightController = new FlashlightController(mContext);
+        mBrightnessController = new BrightnessController(mContext);
+        mRotationController = new RotationController(mContext);
+        mRingerController = new RingerController(mContext);
+        mNotificationRingerController = new NotificationRingerController(mContext);
 
-        lastCode = MODE_NORMAL;
+        mContext.registerReceiver(mSliderUpdateReceiver,
+                new IntentFilter(Constants.ACTION_UPDATE_SLIDER_SETTINGS));
+    }
+
+    private boolean hasSetupCompleted() {
+        return Settings.Secure.getInt(mContext.getContentResolver(),
+                Settings.Secure.USER_SETUP_COMPLETE, 0) != 0;
     }
 
     public KeyEvent handleKeyEvent(KeyEvent event) {
-        if (event.getAction() != KeyEvent.ACTION_DOWN) {
+        int scanCode = event.getScanCode();
+        boolean isSliderControllerSupported = mSliderController != null &&
+                mSliderController.isSupported(scanCode);
+        if (!isSliderControllerSupported) {
             return event;
         }
 
-        if (!mInputManager.getInputDevice(event.getDeviceId()).getName().equals("oplus,hall_tri_state_key")) {
+        if (!hasSetupCompleted()) {
             return event;
         }
 
-        final String scanCode = FileUtils.readOneLine("/proc/tristatekey/tri_state").trim();
-
-        switch (scanCode) {
-            case MODE_NORMAL:
-                mAudioManager.setRingerModeInternal(AudioManager.RINGER_MODE_NORMAL);
-                VibrationUtils.doHapticFeedback(mContext, VibrationEffect.EFFECT_HEAVY_CLICK, true);
-                if (lastCode.equals(MODE_SILENCE)) VolumeUtils.changeMediaVolume(mAudioManager, mContext);
-                break;
-            case MODE_VIBRATION:
-                mAudioManager.setRingerModeInternal(AudioManager.RINGER_MODE_VIBRATE);
-                VibrationUtils.doHapticFeedback(mContext, VibrationEffect.EFFECT_DOUBLE_CLICK, true);
-                if (lastCode.equals(MODE_SILENCE)) VolumeUtils.changeMediaVolume(mAudioManager, mContext);
-                break;
-            case MODE_SILENCE:
-                mAudioManager.setRingerModeInternal(AudioManager.RINGER_MODE_SILENT);
-                VolumeUtils.changeMediaVolume(mAudioManager, mContext);
-                break;
-            default:
-                return event;
+        // We only want ACTION_UP event
+        if (event.getAction() != KeyEvent.ACTION_UP) {
+            return null;
         }
 
-        lastCode = scanCode;
+        mSliderController.processEvent(mContext, scanCode);
 
         return null;
     }
