@@ -42,6 +42,10 @@ on post-fs-data
     chmod 666 /sys/kernel/ois_control/dump_registers
 
 on early-boot
+    # Dolby
+    mkdir /data/vendor/dolby 0770 media media
+    mkdir /data/vendor/multimedia 0775 system system
+
     # Radio
     exec_start oplus-sh
     setprop persist.radio.multisim.config ${vendor.radio.multisim.config}
