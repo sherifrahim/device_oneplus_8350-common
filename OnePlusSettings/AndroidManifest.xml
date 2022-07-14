@@ -32,8 +32,8 @@
     <protected-broadcast android:name="com.android.systemui.doze.pulse" />
     <protected-broadcast android:name="org.nameless.device.OnePlusSettings.UPDATE_FPS_SETTINGS" />
 
-    <protected-broadcast android:name="org.nameless.device.OnePlusSettings.UPDATE_SLIDER_SETTINGS" />
-    <protected-broadcast android:name="org.nameless.device.OnePlusSettings.UPDATE_SLIDER_POSITION" />
+    <protected-broadcast android:name="org.nameless.device.OnePlusSettings.ACTION_UPDATE_SLIDER_SETTINGS" />
+    <protected-broadcast android:name="org.nameless.device.OnePlusSettings.ACTION_UPDATE_SLIDER_POSITION" />
 
     <uses-sdk
         android:minSdkVersion="30"

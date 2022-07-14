@@ -341,10 +341,10 @@ public class MainSettings extends PreferenceFragment
     }
 
     private boolean handleSliderUsageChange(String newValue) {
-        if(newValue == null){
-            Log.d(TAG, "newValue is null");
-            return false;
-        }
+        // if(newValue == null){
+        //     Log.d(TAG, "newValue is null");
+        //     return false;
+        // }
         switch (newValue) {
             case Constants.NOTIF_SLIDER_FOR_NOTIFICATION:
                 return updateSliderActions(

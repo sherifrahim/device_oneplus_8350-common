@@ -55,6 +55,7 @@ public class Startup extends BroadcastReceiver {
         if (enabled) context.startServiceAsUser(new Intent(context, FPSInfoService.class), UserHandle.CURRENT);
 
         DozeUtils.checkDozeService(context);
+        MainSettings.restoreSliderStates(context);
         VibrationUtils.restoreVibStrengthSetting(context);
     }
 }

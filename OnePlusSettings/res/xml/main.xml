@@ -28,8 +28,7 @@
             android:title="@string/notification_slider_usage_title"
             android:entries="@array/notification_slider_usage_entries"
             android:entryValues="@array/notification_slider_usage_entry_values"
-            android:summary="%s"
-            android:defaultValue="6" />
+            android:summary="%s" />
 
         <ListPreference
             android:key="action_top_position"
@@ -37,23 +36,21 @@
             android:dialogTitle="@string/notification_slider_selection_dialog_title"
             android:title="@string/notification_slider_top_position"
             android:summary="%s" 
-            android:defaultValue="65" />
+ />
 
         <ListPreference
             android:key="action_middle_position"
             android:icon="@drawable/ic_middle_icon"
             android:dialogTitle="@string/notification_slider_selection_dialog_title"
             android:title="@string/notification_slider_middle_position"
-            android:summary="%s" 
-            android:defaultValue="64" />
+            android:summary="%s"  />
 
         <ListPreference
             android:key="action_bottom_position"
             android:icon="@drawable/ic_down_icon"
             android:dialogTitle="@string/notification_slider_selection_dialog_title"
             android:title="@string/notification_slider_bottom_position"
-            android:summary="%s"
-            android:defaultValue="63" />
+            android:summary="%s" />
             
         <org.nameless.device.OnePlusSettings.Preferences.SwitchPreference
             android:key="mute_media"
