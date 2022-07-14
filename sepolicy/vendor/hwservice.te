@@ -3,3 +3,6 @@ type vendor_hal_camera_extension_hwservice, hwservice_manager_type, protected_hw
 
 # ORMS
 type vendor_hal_orms_hwservice, hwservice_manager_type, protected_hwservice;
+
+# Performance
+type hal_performance_hwservice, hwservice_manager_type;
