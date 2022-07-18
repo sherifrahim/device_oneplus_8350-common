@@ -10,5 +10,10 @@
   {
     "repository": "vendor_oneplus",
     "target_path": "vendor/oneplus"
+  },
+  {
+    "repository": "vendor_oneplus-firmware",
+    "target_path": "vendor/oneplus-firmware",
+    "remote": "gitlab-stag"
   }
 ]
