@@ -424,4 +424,7 @@
         <item>95</item>   <!-- <item>sensorRadius</item> -->
     </integer-array>
 
+    <!-- Expose number of physical cameras -->
+    <integer name="oplus_num_physical_cameras">4</integer>
+
 </resources>
