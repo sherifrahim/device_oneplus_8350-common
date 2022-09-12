@@ -20,7 +20,7 @@
 #include <android-base/logging.h>
 #include <fcntl.h>
 
-#define CHARGE_CONTROL_NODE "/sys/class/oplus_chg/battery/chg_enable"
+#define CHARGE_CONTROL_NODE "/sys/class/oplus_chg/battery/mmi_charging_enable"
 #define CHARGE_ENABLED '1'
 #define CHARGE_DISABLED '0'
 
