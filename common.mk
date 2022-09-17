@@ -128,7 +128,7 @@ $(call inherit-product-if-exists, vendor/oneplus/apps/sm8350/config.mk)
 
 # Charge control
 PRODUCT_PACKAGES += \
-    vendor.lineage.chgctrl@1.0-service.oneplus_lahaina
+    vendor.lineage.chgctrl@1.0-service.oplus_lahaina
 
 # Dalvik
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
