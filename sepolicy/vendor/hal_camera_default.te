@@ -12,7 +12,5 @@ allow hal_camera_default mnt_vendor_file:dir search;
 allow hal_camera_default vendor_persist_camera_file:dir w_dir_perms;
 allow hal_camera_default vendor_persist_camera_file:file create_file_perms;
 
-allow hal_camera_default cam_laser_sysfs:dir rw_dir_perms;
-allow hal_camera_default cam_laser_sysfs:file rw_file_perms;
-
+rw_dir_file(hal_camera_default, cam_laser_sysfs)
 set_prop(hal_camera_default, vendor_camera_prop)
