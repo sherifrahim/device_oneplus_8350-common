@@ -5,7 +5,8 @@ genfscon proc /tristatekey    u:object_r:vendor_proc_tri_state_key:s0
 genfscon proc /wireless                                                u:object_r:vendor_proc_wireless:s0
 genfscon sysfs /devices/platform/soc/soc:oplus,chg_gki/power_supply    u:object_r:vendor_sysfs_usb_supply:s0
 genfscon sysfs /devices/platform/soc/soc:oplus,chg_intf/oplus_chg      u:object_r:vendor_sysfs_usb_supply:s0
-
+genfscon sysfs /sys/devices/platform/soc/soc:oplus,chg_intf/oplus_chg/battery/voocchg_ing                      u:object_r:vendor_sysfs_battery_supply:s0
+genfscon sysfs /sys/devices/platform/soc/soc:oplus,chg_intf/soc:oplus,chg_intf:oplus,wireless-charge/oplus_chg/wireless/fastchg_status u:object_r:vendor_sysfs_battery_supply:s0
 # Camera
 genfscon sysfs /kernel/tof_control/app0/alg_setting                 u:object_r:cam_laser_sysfs:s0
 genfscon sysfs /kernel/tof_control/app0/app0_apply_fac_calib        u:object_r:cam_laser_sysfs:s0
