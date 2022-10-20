@@ -226,6 +226,6 @@
     <integer name="config_alertSliderLocation">1</integer>
 
     <!-- Whether key handler sends intent when changing slider position -->
-    <string name="config_alertSliderIntent">org.nameless.device.OnePlusSettings.ACTION_UPDATE_SLIDER_POSITION</string>
+    <string name="config_alertSliderIntent">org.evolution.oplus.OPlusExtras.slider.UPDATE_SLIDER_POSITION</string>
 
 </resources>

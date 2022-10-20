@@ -1,4 +1,6 @@
 allow system_server vendor_sysfs_usb_supply:file r_file_perms;
+allow system_server sysfs:file r_file_perms;
+
 rw_dir_file(system_server, vendor_sysfs_battery_supply)
 rw_dir_file(system_server, vendor_proc_engineer)
 rw_dir_file(system_server, vendor_proc_display)

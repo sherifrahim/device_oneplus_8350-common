@@ -1,10 +1,13 @@
-allow system_app sysfs_dm:dir search;
-allow system_app sysfs_dm:file rw_file_perms;
-
-allow system_app vendor_sysfs_graphics:dir search;
-allow system_app vendor_sysfs_graphics:file rw_file_perms;
-
 allow system_app sysfs_leds:dir search;
 
-allow system_app sysfs_vibrator:dir r_dir_perms;
-allow system_app sysfs_vibrator:file rw_file_perms;
+rw_dir_file(system_app, sysfs_dm)
+rw_dir_file(system_app, sysfs_fastcharge)
+rw_dir_file(system_app, sysfs_sync)
+rw_dir_file(system_app, sysfs_vibrator)
+rw_dir_file(system_app, sysfs_workqueue)
+rw_dir_file(system_app, vendor_proc_display)
+rw_dir_file(system_app, vendor_proc_wireless)
+rw_dir_file(system_app, vendor_sysfs_graphics)
+rw_dir_file(system_app, vendor_sysfs_kgsl)
+rw_dir_file(system_app, vendor_sysfs_msm_perf)
+rw_dir_file(system_app, vendor_sysfs_usb_supply)

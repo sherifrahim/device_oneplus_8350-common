@@ -137,9 +137,6 @@
 /(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.3-service\.oplus    u:object_r:hal_fingerprint_default_exec:s0
 /dev/goodix_fp                                                                                   u:object_r:fingerprint_device:s0
 
-# FPS Info
-/sys/devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/sde-crtc-0/measured_fps          u:object_r:sysfs_dm:s0
-
 # Init
 /(odm|vendor/odm)/bin/init\.oplus\.sh    u:object_r:vendor_qti_init_shell_exec:s0
 
@@ -164,6 +161,16 @@
 
 # Sensors
 /(odm|vendor/odm)/bin/oplus_sensor_fb    u:object_r:vendor_sensors_exec:s0
+
+# Sys files (OPlusExtras)
+/sys/class/kgsl/kgsl-3d0/devfreq/adrenoboost                                              u:object_r:vendor_sysfs_kgsl:s0
+/sys/devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/sde-crtc-0/measured_fps         u:object_r:sysfs_dm:s0
+/sys/kernel/fast_charge/force_fast_charge                                                 u:object_r:sysfs_fastcharge:s0
+/sys/module/oplus_chg/parameters/force_fast_charge                                        u:object_r:sysfs_fastcharge:s0
+/sys/module/msm_drm/parameters(/.*)?                                                      u:object_r:sysfs_dm:s0
+/sys/module/msm_performance/parameters/touchboost                                         u:object_r:vendor_sysfs_msm_perf:s0
+/sys/module/sync/parameters/fsync_enabled                                                 u:object_r:sysfs_sync:s0
+/sys/module/workqueue/parameters/power_efficient                                          u:object_r:sysfs_workqueue:s0
 
 # Touch
 /(vendor|system/vendor)/bin/hw/vendor\.lineage\.touch@1\.0-service\.oplus    u:object_r:hal_lineage_touch_default_exec:s0

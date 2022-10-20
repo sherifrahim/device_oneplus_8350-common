@@ -8,6 +8,7 @@ type vendor_persist_camera_file, file_type;
 
 # Charging
 type vendor_proc_wireless, fs_type, proc_type;
+type sysfs_fastcharge, fs_type, sysfs_type;
 
 # Display
 type vendor_proc_display, fs_type, proc_type;
@@ -22,6 +23,11 @@ type vendor_proc_fingerprint, fs_type, proc_type;
 # Opboot
 type vendor_proc_oplus_boot, fs_type, proc_type;
 
+# Sync
+type sysfs_sync, fs_type, sysfs_type;
+
 # Version
 type vendor_proc_oplus_version, fs_type, proc_type;
 	
+# Workqueue
+type sysfs_workqueue, fs_type, sysfs_type;
