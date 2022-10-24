@@ -49,6 +49,11 @@
     <string name="node_game_mode_switch_true">1, smooth_level:0, sensitive_level:0, high_frame_support:0, high_frame_value:0</string>
     <string name="node_game_mode_switch_false">0, smooth_level:0, sensitive_level:0, high_frame_support:0, high_frame_value:0</string>
 
+    <!-- TP Edge Limit procfs node path -->
+    <string name="node_tp_edge_limit_mode_switch">/proc/touchpanel/oplus_tp_direction</string>
+    <string name="node_tp_edge_limit_mode_switch_true">1</string>
+    <string name="node_tp_edge_limit_mode_switch_false">0</string>
+
     <!-- USB 2.0 Force fastcharge sysfs node path -->
     <string name="node_usb2_fast_charge_mode_switch">/sys/module/oplus_chg/parameters/force_fast_charge</string>
     <string name="node_usb2_fast_charge_mode_switch_true">1</string>

@@ -17,6 +17,9 @@
     <!-- Whether device supports High Brightness Mode -->
     <bool name="config_deviceSupportsHBM">true</bool>
 
+    <!-- Whether device supports Dolby -->
+    <bool name="config_deviceSupportsDolby">true</bool>
+
     <!-- Whether device supports disabling of fsync -->
     <bool name="config_deviceSupportsFSyncOff">true</bool>
 
@@ -33,7 +36,7 @@
     <bool name="config_deviceSupportsGameMode">true</bool>
 
     <!-- Whether device supports TP Edge Limit -->
-    <bool name="config_deviceSupportsTPEdgeLimit">false</bool>
+    <bool name="config_deviceSupportsTPEdgeLimit">true</bool>
 
     <!-- Whether to show Jitter Test -->
     <bool name="config_deviceSupportsJitterTest">true</bool>
