@@ -142,6 +142,8 @@ void vendor_load_properties() {
       /* Graphics */
       property_override("ro.surface_flinger.set_idle_timer_ms", "250");
       property_override("ro.surface_flinger.set_touch_timer_ms", "300");
+      /* Resolution switch */
+      property_override("ro.display.resolution.overlay", "org.nameless.display.resolution.fwb,org.nameless.display.resolution.sysui");
       /* USB */
       property_override("vendor.usb.product_string", "OnePlus 9 Pro");
       switch (rf_version){
@@ -180,6 +182,8 @@ void vendor_load_properties() {
       /* Graphics */
       property_override("ro.surface_flinger.set_idle_timer_ms", "250");
       property_override("ro.surface_flinger.set_touch_timer_ms", "300");
+      /* Resolution switch */
+      property_override("ro.display.resolution.overlay", "org.nameless.display.resolution.fwb,org.nameless.display.resolution.sysui");
       /* USB */
       property_override("vendor.usb.product_string", "OnePlus 9 Pro");
       switch (rf_version){

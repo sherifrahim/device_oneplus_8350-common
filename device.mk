@@ -345,6 +345,8 @@ PRODUCT_PACKAGES += \
 
 # Overlay - OnePlus 9 Pro
 PRODUCT_PACKAGES += \
+    FhdResolutionOverlayFwb \
+    FhdResolutionOverlaySysUI \
     OPlus9PFrameworksResTarget \
     OPlus9PPixelSetupWizardResTarget \
     OPlus9PSettingsProviderResTarget \
