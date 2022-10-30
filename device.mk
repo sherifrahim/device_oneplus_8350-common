@@ -338,6 +338,7 @@ PRODUCT_PACKAGES += \
 # Overlay - OnePlus 9
 PRODUCT_PACKAGES += \
    OPlus9FrameworksResTarget \
+   OPlus9PixelSetupWizardResTarget \
    OPlus9SettingsProviderResTarget \
    OPlus9SystemUIResTarget \
    OPlus9WifiResTarget
@@ -345,6 +346,7 @@ PRODUCT_PACKAGES += \
 # Overlay - OnePlus 9 Pro
 PRODUCT_PACKAGES += \
     OPlus9PFrameworksResTarget \
+    OPlus9PPixelSetupWizardResTarget \
     OPlus9PSettingsProviderResTarget \
     OPlus9PSystemUIResTarget \
     OPlus9PWifiResTarget
