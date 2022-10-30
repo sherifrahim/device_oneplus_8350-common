@@ -339,13 +339,15 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
    OPlus9FrameworksResTarget \
    OPlus9SettingsProviderResTarget \
-   OPlus9SystemUIResTarget
+   OPlus9SystemUIResTarget \
+   OPlus9WifiResTarget
 
 # Overlay - OnePlus 9 Pro
 PRODUCT_PACKAGES += \
     OPlus9PFrameworksResTarget \
     OPlus9PSettingsProviderResTarget \
-    OPlus9PSystemUIResTarget
+    OPlus9PSystemUIResTarget \
+    OPlus9PWifiResTarget
 
 # Overlay - QSSI
 PRODUCT_PACKAGES += \

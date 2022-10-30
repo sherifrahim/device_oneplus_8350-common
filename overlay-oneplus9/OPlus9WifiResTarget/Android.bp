@@ -1,0 +1,4 @@
+runtime_resource_overlay {
+    name: "OPlus9WifiResTarget",
+    product_specific: true,
+}
