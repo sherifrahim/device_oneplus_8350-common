@@ -1,6 +1,26 @@
 ## All proprietary files from this list, unless pinned and noted otherwise, are
 ## from OnePlus 9 Pro (LE2125_11.C.63).
 
+# ACDBs - from OnePlus 9 (LE2115_11.C.63)
+odm/etc/acdbdata/Audio_Parameter_Version.txt:odm/oneplus9/etc/acdbdata/Audio_Parameter_Version.txt|1ee607e28afafee6482adae4cdf35dd0a07f0ca2
+odm/etc/acdbdata/Bluetooth_cal.acdb:odm/oneplus9/etc/acdbdata/Bluetooth_cal.acdb|83b02229d2d0a819f357dedbe378c7120407a1a9
+odm/etc/acdbdata/General_cal.acdb:odm/oneplus9/etc/acdbdata/General_cal.acdb|c93194b8cb59c450913b2e7bc0cf1bcdd715c702
+odm/etc/acdbdata/Global_cal.acdb:odm/oneplus9/etc/acdbdata/Global_cal.acdb|947f51e0513e048b380c1e28edf58d6d5cf82340
+odm/etc/acdbdata/Handset_cal.acdb:odm/oneplus9/etc/acdbdata/Handset_cal.acdb|b7c77c954f939999708089454b2879ab1070c3a7
+odm/etc/acdbdata/Hdmi_cal.acdb:odm/oneplus9/etc/acdbdata/Hdmi_cal.acdb|017401f1e9130e9875edd32edcae539e8288e5b5
+odm/etc/acdbdata/Headset_cal.acdb:odm/oneplus9/etc/acdbdata/Headset_cal.acdb|8f5c70709d8528846cdc22d64d91ea8602f617d0
+odm/etc/acdbdata/Speaker_cal.acdb:odm/oneplus9/etc/acdbdata/Speaker_cal.acdb|da50ecdad9243ad1d484a4e1852b1ee1371f69d8
+
+# ACDBs - OnePlus 9 Pro
+odm/etc/acdbdata/Audio_Parameter_Version.txt:odm/oneplus9pro/etc/acdbdata/Audio_Parameter_Version.txt
+odm/etc/acdbdata/Bluetooth_cal.acdb:odm/oneplus9pro/etc/acdbdata/Bluetooth_cal.acdb
+odm/etc/acdbdata/General_cal.acdb:odm/oneplus9pro/etc/acdbdata/General_cal.acdb
+odm/etc/acdbdata/Global_cal.acdb:odm/oneplus9pro/etc/acdbdata/Global_cal.acdb
+odm/etc/acdbdata/Handset_cal.acdb:odm/oneplus9pro/etc/acdbdata/Handset_cal.acdb
+odm/etc/acdbdata/Hdmi_cal.acdb:odm/oneplus9pro/etc/acdbdata/Hdmi_cal.acdb
+odm/etc/acdbdata/Headset_cal.acdb:odm/oneplus9pro/etc/acdbdata/Headset_cal.acdb
+odm/etc/acdbdata/Speaker_cal.acdb:odm/oneplus9pro/etc/acdbdata/Speaker_cal.acdb
+
 # ACDBs
 vendor/etc/acdbdata/nn_ns_models/fai__2.0.0_0.1__3.0.0_0.0__eai_1.00.pmd
 vendor/etc/acdbdata/nn_ns_models/fai__2.0.0_0.1__3.0.0_0.0__eai_1.10.pmd
@@ -139,6 +159,68 @@ vendor/lib/libhdmipassthru.so
 vendor/lib/libqtigef.so
 vendor/lib64/libadsprpc.so
 
+# Audio lvimfs params - from OnePlus 9 (LE2115_11.C.63)
+odm/etc/lvimfs_params/LVACFS_Configuration.txt:odm/oneplus9/etc/lvimfs_params/LVACFS_Configuration.txt|024b3814ee9d35b2954c253ae1a25311d4724902
+odm/etc/lvimfs_params/LVIMFS_Calibration_2mic.dat:odm/oneplus9/etc/lvimfs_params/LVIMFS_Calibration_2mic.dat|ae8a5e7c7ee1a036ebf19a93d0e4e6ad804421ed
+odm/etc/lvimfs_params/LVIMFS_Parameter_ID10_MIC_VR.txt:odm/oneplus9/etc/lvimfs_params/LVIMFS_Parameter_ID10_MIC_VR.txt|cdb512cc69a74e0142f8b8d49ca093faec6be110
+odm/etc/lvimfs_params/LVIMFS_Parameter_ID11_HE.txt:odm/oneplus9/etc/lvimfs_params/LVIMFS_Parameter_ID11_HE.txt|0a322fb814ae372428791765f686f798c16d6ea6
+odm/etc/lvimfs_params/LVIMFS_Parameter_ID12_HE_APP1.txt:odm/oneplus9/etc/lvimfs_params/LVIMFS_Parameter_ID12_HE_APP1.txt|0a322fb814ae372428791765f686f798c16d6ea6
+odm/etc/lvimfs_params/LVIMFS_Parameter_ID13_HE_APP2.txt:odm/oneplus9/etc/lvimfs_params/LVIMFS_Parameter_ID13_HE_APP2.txt|95dbfc449914e75a63fe4b37d782836deac262d7
+odm/etc/lvimfs_params/LVIMFS_Parameter_ID14_HE_Cam.txt:odm/oneplus9/etc/lvimfs_params/LVIMFS_Parameter_ID14_HE_Cam.txt|dd2ed95831522a23b8b40b360e3d9d3e51b4cce3
+odm/etc/lvimfs_params/LVIMFS_Parameter_ID15_HE_Conference.txt:odm/oneplus9/etc/lvimfs_params/LVIMFS_Parameter_ID15_HE_Conference.txt|95dbfc449914e75a63fe4b37d782836deac262d7
+odm/etc/lvimfs_params/LVIMFS_Parameter_ID16_HE_Fast.txt:odm/oneplus9/etc/lvimfs_params/LVIMFS_Parameter_ID16_HE_Fast.txt|95dbfc449914e75a63fe4b37d782836deac262d7
+odm/etc/lvimfs_params/LVIMFS_Parameter_ID17_HE_Interview.txt:odm/oneplus9/etc/lvimfs_params/LVIMFS_Parameter_ID17_HE_Interview.txt|95dbfc449914e75a63fe4b37d782836deac262d7
+odm/etc/lvimfs_params/LVIMFS_Parameter_ID18_HE_Unprocess.txt:odm/oneplus9/etc/lvimfs_params/LVIMFS_Parameter_ID18_HE_Unprocess.txt|2d7c7efc793b2120f508e5efd0b5b23c5d29f926
+odm/etc/lvimfs_params/LVIMFS_Parameter_ID19_HE_Voice.txt:odm/oneplus9/etc/lvimfs_params/LVIMFS_Parameter_ID19_HE_Voice.txt|95dbfc449914e75a63fe4b37d782836deac262d7
+odm/etc/lvimfs_params/LVIMFS_Parameter_ID1_MIC_Normal.txt:odm/oneplus9/etc/lvimfs_params/LVIMFS_Parameter_ID1_MIC_Normal.txt|0d93916d90d8c2a532518eb404f29875fb7bd501
+odm/etc/lvimfs_params/LVIMFS_Parameter_ID20_HE_VR.txt:odm/oneplus9/etc/lvimfs_params/LVIMFS_Parameter_ID20_HE_VR.txt|f510e11d08da3e990402d4a97179e4a1256b0fc3
+odm/etc/lvimfs_params/LVIMFS_Parameter_ID21_USB_Normal.txt:odm/oneplus9/etc/lvimfs_params/LVIMFS_Parameter_ID21_USB_Normal.txt|6c8c4ee2b39c14f0ddd67454008e480ab254264e
+odm/etc/lvimfs_params/LVIMFS_Parameter_ID22_USB_APP1.txt:odm/oneplus9/etc/lvimfs_params/LVIMFS_Parameter_ID22_USB_APP1.txt|bc446b61076d1d0a1a80f21ba992c077d51aef79
+odm/etc/lvimfs_params/LVIMFS_Parameter_ID23_BT_Normal.txt:odm/oneplus9/etc/lvimfs_params/LVIMFS_Parameter_ID23_BT_Normal.txt|6af97c7382f4ac0036d2d999a52e1f2ce461d3a3
+odm/etc/lvimfs_params/LVIMFS_Parameter_ID24_BT_APP1.txt:odm/oneplus9/etc/lvimfs_params/LVIMFS_Parameter_ID24_BT_APP1.txt|6af97c7382f4ac0036d2d999a52e1f2ce461d3a3
+odm/etc/lvimfs_params/LVIMFS_Parameter_ID2_MIC_APP1.txt:odm/oneplus9/etc/lvimfs_params/LVIMFS_Parameter_ID2_MIC_APP1.txt|37cbb75780b934771e675dd881188058b7c7212e
+odm/etc/lvimfs_params/LVIMFS_Parameter_ID3_MIC_APP2.txt:odm/oneplus9/etc/lvimfs_params/LVIMFS_Parameter_ID3_MIC_APP2.txt|40e2e2186b5c780183b6c8ad3c488eaf0d91c2b4
+odm/etc/lvimfs_params/LVIMFS_Parameter_ID4_MIC_Cam.txt:odm/oneplus9/etc/lvimfs_params/LVIMFS_Parameter_ID4_MIC_Cam.txt|0d93916d90d8c2a532518eb404f29875fb7bd501
+odm/etc/lvimfs_params/LVIMFS_Parameter_ID5_MIC_Conference.txt:odm/oneplus9/etc/lvimfs_params/LVIMFS_Parameter_ID5_MIC_Conference.txt|ca13c5a678543bde2b3cec45f5fbcb6d68ecd806
+odm/etc/lvimfs_params/LVIMFS_Parameter_ID6_MIC_Fast.txt:odm/oneplus9/etc/lvimfs_params/LVIMFS_Parameter_ID6_MIC_Fast.txt|153ac7500258f27c6806a0defece697444db69f3
+odm/etc/lvimfs_params/LVIMFS_Parameter_ID7_MIC_Interview.txt:odm/oneplus9/etc/lvimfs_params/LVIMFS_Parameter_ID7_MIC_Interview.txt|bac3a86c2f2468b56c7fea09a53b57bd59754a4c
+odm/etc/lvimfs_params/LVIMFS_Parameter_ID8_MIC_Unprocess.txt:odm/oneplus9/etc/lvimfs_params/LVIMFS_Parameter_ID8_MIC_Unprocess.txt|327585f2bc867079362a30df4aa1b76e63d33d49
+odm/etc/lvimfs_params/LVIMFS_Parameter_ID9_MIC_Voice.txt:odm/oneplus9/etc/lvimfs_params/LVIMFS_Parameter_ID9_MIC_Voice.txt|153ac7500258f27c6806a0defece697444db69f3
+
+# Audio lvimfs params - OnePlus 9 Pro
+odm/etc/lvimfs_params/LVACFS_Configuration.txt:odm/oneplus9pro/etc/lvimfs_params/LVACFS_Configuration.txt
+odm/etc/lvimfs_params/LVIMFS_Calibration_2mic.dat:odm/oneplus9pro/etc/lvimfs_params/LVIMFS_Calibration_2mic.dat
+odm/etc/lvimfs_params/LVIMFS_Parameter_ID10_MIC_VR.txt:odm/oneplus9pro/etc/lvimfs_params/LVIMFS_Parameter_ID10_MIC_VR.txt
+odm/etc/lvimfs_params/LVIMFS_Parameter_ID11_HE.txt:odm/oneplus9pro/etc/lvimfs_params/LVIMFS_Parameter_ID11_HE.txt
+odm/etc/lvimfs_params/LVIMFS_Parameter_ID12_HE_APP1.txt:odm/oneplus9pro/etc/lvimfs_params/LVIMFS_Parameter_ID12_HE_APP1.txt
+odm/etc/lvimfs_params/LVIMFS_Parameter_ID13_HE_APP2.txt:odm/oneplus9pro/etc/lvimfs_params/LVIMFS_Parameter_ID13_HE_APP2.txt
+odm/etc/lvimfs_params/LVIMFS_Parameter_ID14_HE_Cam.txt:odm/oneplus9pro/etc/lvimfs_params/LVIMFS_Parameter_ID14_HE_Cam.txt
+odm/etc/lvimfs_params/LVIMFS_Parameter_ID15_HE_Conference.txt:odm/oneplus9pro/etc/lvimfs_params/LVIMFS_Parameter_ID15_HE_Conference.txt
+odm/etc/lvimfs_params/LVIMFS_Parameter_ID16_HE_Fast.txt:odm/oneplus9pro/etc/lvimfs_params/LVIMFS_Parameter_ID16_HE_Fast.txt
+odm/etc/lvimfs_params/LVIMFS_Parameter_ID17_HE_Interview.txt:odm/oneplus9pro/etc/lvimfs_params/LVIMFS_Parameter_ID17_HE_Interview.txt
+odm/etc/lvimfs_params/LVIMFS_Parameter_ID18_HE_Unprocess.txt:odm/oneplus9pro/etc/lvimfs_params/LVIMFS_Parameter_ID18_HE_Unprocess.txt
+odm/etc/lvimfs_params/LVIMFS_Parameter_ID19_HE_Voice.txt:odm/oneplus9pro/etc/lvimfs_params/LVIMFS_Parameter_ID19_HE_Voice.txt
+odm/etc/lvimfs_params/LVIMFS_Parameter_ID1_MIC_Normal.txt:odm/oneplus9pro/etc/lvimfs_params/LVIMFS_Parameter_ID1_MIC_Normal.txt
+odm/etc/lvimfs_params/LVIMFS_Parameter_ID20_HE_VR.txt:odm/oneplus9pro/etc/lvimfs_params/LVIMFS_Parameter_ID20_HE_VR.txt
+odm/etc/lvimfs_params/LVIMFS_Parameter_ID21_USB_Normal.txt:odm/oneplus9pro/etc/lvimfs_params/LVIMFS_Parameter_ID21_USB_Normal.txt
+odm/etc/lvimfs_params/LVIMFS_Parameter_ID22_USB_APP1.txt:odm/oneplus9pro/etc/lvimfs_params/LVIMFS_Parameter_ID22_USB_APP1.txt
+odm/etc/lvimfs_params/LVIMFS_Parameter_ID23_BT_Normal.txt:odm/oneplus9pro/etc/lvimfs_params/LVIMFS_Parameter_ID23_BT_Normal.txt
+odm/etc/lvimfs_params/LVIMFS_Parameter_ID24_BT_APP1.txt:odm/oneplus9pro/etc/lvimfs_params/LVIMFS_Parameter_ID24_BT_APP1.txt
+odm/etc/lvimfs_params/LVIMFS_Parameter_ID2_MIC_APP1.txt:odm/oneplus9pro/etc/lvimfs_params/LVIMFS_Parameter_ID2_MIC_APP1.txt
+odm/etc/lvimfs_params/LVIMFS_Parameter_ID3_MIC_APP2.txt:odm/oneplus9pro/etc/lvimfs_params/LVIMFS_Parameter_ID3_MIC_APP2.txt
+odm/etc/lvimfs_params/LVIMFS_Parameter_ID4_MIC_Cam.txt:odm/oneplus9pro/etc/lvimfs_params/LVIMFS_Parameter_ID4_MIC_Cam.txt
+odm/etc/lvimfs_params/LVIMFS_Parameter_ID5_MIC_Conference.txt:odm/oneplus9pro/etc/lvimfs_params/LVIMFS_Parameter_ID5_MIC_Conference.txt
+odm/etc/lvimfs_params/LVIMFS_Parameter_ID6_MIC_Fast.txt:odm/oneplus9pro/etc/lvimfs_params/LVIMFS_Parameter_ID6_MIC_Fast.txt
+odm/etc/lvimfs_params/LVIMFS_Parameter_ID7_MIC_Interview.txt:odm/oneplus9pro/etc/lvimfs_params/LVIMFS_Parameter_ID7_MIC_Interview.txt
+odm/etc/lvimfs_params/LVIMFS_Parameter_ID8_MIC_Unprocess.txt:odm/oneplus9pro/etc/lvimfs_params/LVIMFS_Parameter_ID8_MIC_Unprocess.txt
+odm/etc/lvimfs_params/LVIMFS_Parameter_ID9_MIC_Voice.txt:odm/oneplus9pro/etc/lvimfs_params/LVIMFS_Parameter_ID9_MIC_Voice.txt
+
+# Audio firmware - from OnePlus 9 (LE2115_11.C.63)
+odm/firmware/tfa98xx.cnt:odm/oneplus9/firmware/tfa98xx.cnt|5578bfb86a4123af049c2885af7b30d3fd0a53e4
+
+# Audio firmware - OnePlus 9 Pro
+odm/firmware/tfa98xx.cnt:odm/oneplus9pro/firmware/tfa98xx.cnt
+
 # Bluetooth
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
@@ -172,6 +254,55 @@ vendor/lib64/vendor.qti.hardware.fm@1.0.so
 # Bluetooth (aptX) - from raven - TP1A.220624.021
 system_ext/lib64/libaptXHD_encoder.so|e13fa70c97caaa24d061678bdee608eb8850a69e
 system_ext/lib64/libaptX_encoder.so|df1c89d7af1bb35808d5fe3496b04ba066c10cbc
+
+# Bluetooth Firmware - from OnePlus 9 (LE2115_11.C.63)
+odm/etc/bt/hpnv10.bin:odm/oneplus9/etc/bt/hpnv10.bin|b8ecdc55bd912de0973570cc02da350a1e06c7c3
+odm/etc/bt/hpnv10_1.bin:odm/oneplus9/etc/bt/hpnv10_1.bin|326788c5edd8320b8c28a17cba4c00bb4a4e1389
+odm/etc/bt/second_rf.conf:odm/oneplus9/etc/bt/second_rf.conf|148e45dc8b3a46ba1b833878d2bf9f92c8702d26
+
+# Camera - from OnePlus 9 (LE2115_11.C.63)
+odm/etc/camera/config/camera_unit_config:odm/oneplus9/etc/camera/config/camera_unit_config|4bb899d87c1248eac01d2c3ebcd3b9ad22cb6ce2
+odm/etc/camera/config/oplus_camera_aps_config:odm/oneplus9/etc/camera/config/oplus_camera_aps_config|7514ce1898fdd477a5dd5044af179941225135c1
+odm/etc/camera/config/oplus_camera_config:odm/oneplus9/etc/camera/config/oplus_camera_config|d093b359fe2632bba685982bf102cb525ecbdc5f
+odm/etc/camera/CameraHWConfiguration.config:odm/oneplus9/etc/camera/CameraHWConfiguration.config|79839b688d91eef2abb19c2e67400da009eb6b7b
+odm/etc/camera/calibrationOutput_uw.bin:odm/oneplus9/etc/camera/calibrationOutput_uw.bin|a5bdcc7266d4b2f6eb995cd691576123f765dfbb
+odm/etc/camera/calibrationOutput_uw_686.bin:odm/oneplus9/etc/camera/calibrationOutput_uw_686.bin|0132d59e77f2ecce9cd6e32bcf6602a1d8b4d4d9
+odm/etc/camera/engineer_camera_config:odm/oneplus9/etc/camera/engineer_camera_config|4cc292cc65a9d814005a5f7c1cc31b55b4403bc4
+odm/etc/camera/settings_fdc.txt:odm/oneplus9/etc/camera/settings_fdc.txt|5f6640eb0e2382c704b1ed07117af886510263f8
+odm/lib64/camera/com.qti.sensor.imx689.lemonade.so:odm/oneplus9/lib64/camera/com.qti.sensor.imx689.lemonade.so|2afc614393ae748324d2c44d9d052e7dfdcd744a
+odm/lib64/camera/com.qti.sensormodule.lemonade.semco_imx689.bin:odm/oneplus9/lib64/camera/com.qti.sensormodule.lemonade.semco_imx689.bin|a5a6d0396b90df6cfb9f420de3ffddb96955e2cf
+odm/lib64/camera/com.qti.sensormodule.lemonade.shine_gc02m1b.bin:odm/oneplus9/lib64/camera/com.qti.sensormodule.lemonade.shine_gc02m1b.bin|becc4434aa33c51aa09dd9be019ee49d26540606
+odm/lib64/camera/com.qti.sensormodule.lemonade.sunny_imx766.bin:odm/oneplus9/lib64/camera/com.qti.sensormodule.lemonade.sunny_imx766.bin|c6f68d56ce2b5cc654bd539fbc4cd46275284fe2
+odm/lib64/camera/com.qti.sensormodule.lemonade.sunny_imx766_MP.bin:odm/oneplus9/lib64/camera/com.qti.sensormodule.lemonade.sunny_imx766_MP.bin|10a0a9f7c7ccb3544c169dc54130a2d9576688a5
+odm/lib64/camera/com.qti.sensormodule.lemonade.sunny_imx766_ak7375c.bin:odm/oneplus9/lib64/camera/com.qti.sensormodule.lemonade.sunny_imx766_ak7375c.bin|e4a3944a937d525a1384ec94facefc0de7a0c368
+odm/lib64/camera/com.qti.sensormodule.lemonade.truly_imx471.bin:odm/oneplus9/lib64/camera/com.qti.sensormodule.lemonade.truly_imx471.bin|e964b1f1c4a6f5e95646a9fc53183d5550c38463
+odm/lib64/camera/com.qti.tuned.semco_imx689.bin:odm/oneplus9/lib64/camera/com.qti.tuned.semco_imx689.bin|bdaf4ac0545d019ee6527f1069a15e6f43c072c9
+odm/lib64/camera/com.qti.tuned.shine_gc02m1b.bin:odm/oneplus9/lib64/camera/com.qti.tuned.shine_gc02m1b.bin|f3757a70d28c6136b7fb80028119b7356755278c
+
+# Camera - OnePlus 9 Pro
+odm/etc/camera/config/camera_unit_config:odm/oneplus9pro/etc/camera/config/camera_unit_config
+odm/etc/camera/config/oplus_camera_aps_config:odm/oneplus9pro/etc/camera/config/oplus_camera_aps_config
+odm/etc/camera/config/oplus_camera_config:odm/oneplus9pro/etc/camera/config/oplus_camera_config
+odm/etc/camera/CameraHWConfiguration.config:odm/oneplus9pro/etc/camera/CameraHWConfiguration.config
+odm/etc/camera/calibrationOutput_uw.bin:odm/oneplus9pro/etc/camera/calibrationOutput_uw.bin
+odm/etc/camera/calibrationOutput_uw_686.bin:odm/oneplus9pro/etc/camera/calibrationOutput_uw_686.bin
+odm/etc/camera/calibrationOutput_wt.bin:odm/oneplus9pro/etc/camera/calibrationOutput_wt.bin
+odm/etc/camera/engineer_camera_config:odm/oneplus9pro/etc/camera/engineer_camera_config
+odm/etc/camera/settings_fdc.txt:odm/oneplus9pro/etc/camera/settings_fdc.txt
+odm/etc/init/calibrationOutput_wt.rc:odm/oneplus9pro/etc/init/calibrationOutput_wt.rc
+odm/lib64/camera/com.qti.sensor.imx789.lemonade.so:odm/oneplus9pro/lib64/camera/com.qti.sensor.imx789.lemonade.so
+odm/lib64/camera/com.qti.sensor.ov08a10.lemonade.so:odm/oneplus9pro/lib64/camera/com.qti.sensor.ov08a10.lemonade.so
+odm/lib64/camera/com.qti.sensormodule.lemonadep.holitech_gc02m1b.bin:odm/oneplus9pro/lib64/camera/com.qti.sensormodule.lemonadep.holitech_gc02m1b.bin
+odm/lib64/camera/com.qti.sensormodule.lemonadep.qtech_ov08a10.bin:odm/oneplus9pro/lib64/camera/com.qti.sensormodule.lemonadep.qtech_ov08a10.bin
+odm/lib64/camera/com.qti.sensormodule.lemonadep.semco_imx789.bin:odm/oneplus9pro/lib64/camera/com.qti.sensormodule.lemonadep.semco_imx789.bin
+odm/lib64/camera/com.qti.sensormodule.lemonadep.semco_imx789_MP.bin:odm/oneplus9pro/lib64/camera/com.qti.sensormodule.lemonadep.semco_imx789_MP.bin
+odm/lib64/camera/com.qti.sensormodule.lemonadep.sunny_imx766.bin:odm/oneplus9pro/lib64/camera/com.qti.sensormodule.lemonadep.sunny_imx766.bin
+odm/lib64/camera/com.qti.sensormodule.lemonadep.sunny_imx766_MP.bin:odm/oneplus9pro/lib64/camera/com.qti.sensormodule.lemonadep.sunny_imx766_MP.bin
+odm/lib64/camera/com.qti.sensormodule.lemonadep.sunny_imx766_ak7375c.bin:odm/oneplus9pro/lib64/camera/com.qti.sensormodule.lemonadep.sunny_imx766_ak7375c.bin
+odm/lib64/camera/com.qti.sensormodule.lemonadep.truly_imx471.bin:odm/oneplus9pro/lib64/camera/com.qti.sensormodule.lemonadep.truly_imx471.bin
+odm/lib64/camera/com.qti.tuned.holitech_gc02m1b.bin:odm/oneplus9pro/lib64/camera/com.qti.tuned.holitech_gc02m1b.bin
+odm/lib64/camera/com.qti.tuned.qtech_ov08a10.bin:odm/oneplus9pro/lib64/camera/com.qti.tuned.qtech_ov08a10.bin
+odm/lib64/camera/com.qti.tuned.semco_imx789.bin:odm/oneplus9pro/lib64/camera/com.qti.tuned.semco_imx789.bin
 
 # Camera
 odm/etc/camera/ancsegbase/anc_cl_kernel.cache
@@ -1331,6 +1462,29 @@ vendor/firmware/ipa_fws.b04
 vendor/firmware/ipa_fws.elf
 vendor/firmware/ipa_fws.mdt
 
+# Iris - OnePlus 9 Pro
+odm/etc/inparm/iris5/inParm1.txt:odm/oneplus9pro/etc/inparm/iris5/inParm1.txt
+odm/etc/inparm/iris5/inParm10.txt:odm/oneplus9pro/etc/inparm/iris5/inParm10.txt
+odm/etc/inparm/iris5/inParm11.txt:odm/oneplus9pro/etc/inparm/iris5/inParm11.txt
+odm/etc/inparm/iris5/inParm12.txt:odm/oneplus9pro/etc/inparm/iris5/inParm12.txt
+odm/etc/inparm/iris5/inParm13.txt:odm/oneplus9pro/etc/inparm/iris5/inParm13.txt
+odm/etc/inparm/iris5/inParm14.txt:odm/oneplus9pro/etc/inparm/iris5/inParm14.txt
+odm/etc/inparm/iris5/inParm15.txt:odm/oneplus9pro/etc/inparm/iris5/inParm15.txt
+odm/etc/inparm/iris5/inParm16.txt:odm/oneplus9pro/etc/inparm/iris5/inParm16.txt
+odm/etc/inparm/iris5/inParm17.txt:odm/oneplus9pro/etc/inparm/iris5/inParm17.txt
+odm/etc/inparm/iris5/inParm18.txt:odm/oneplus9pro/etc/inparm/iris5/inParm18.txt
+odm/etc/inparm/iris5/inParm2.txt:odm/oneplus9pro/etc/inparm/iris5/inParm2.txt
+odm/etc/inparm/iris5/inParm3.txt:odm/oneplus9pro/etc/inparm/iris5/inParm3.txt
+odm/etc/inparm/iris5/inParm4.txt:odm/oneplus9pro/etc/inparm/iris5/inParm4.txt
+odm/etc/inparm/iris5/inParm5.txt:odm/oneplus9pro/etc/inparm/iris5/inParm5.txt
+odm/etc/inparm/iris5/inParm6.txt:odm/oneplus9pro/etc/inparm/iris5/inParm6.txt
+odm/etc/inparm/iris5/inParm7.txt:odm/oneplus9pro/etc/inparm/iris5/inParm7.txt
+odm/etc/inparm/iris5/inParm8.txt:odm/oneplus9pro/etc/inparm/iris5/inParm8.txt
+odm/etc/inparm/iris5/inParm9.txt:odm/oneplus9pro/etc/inparm/iris5/inParm9.txt
+odm/vendor/firmware/iris5.fw:odm/oneplus9pro/vendor/firmware/iris5.fw
+odm/vendor/firmware/iris5_ccf1.fw:odm/oneplus9pro/vendor/firmware/iris5_ccf1.fw
+odm/vendor/firmware/iris5_ccf2.fw:odm/oneplus9pro/vendor/firmware/iris5_ccf2.fw
+
 # Iris
 odm/bin/hw/vendor.pixelworks.hardware.display.iris-service
 odm/bin/hw/vendor.pixelworks.hardware.feature.irisfeature-service
@@ -1789,6 +1943,38 @@ odm/bin/hw/vendor.qti.secure_element@1.2-service
 odm/etc/init/vendor.qti.secure_element@1.2-service.rc
 odm/lib64/android.hardware.secure_element@1.0-impl.so
 
+# Sensors - from OnePlus 9 (LE2115_11.C.63)
+odm/etc/sensor/config/lahaina_aw9610x_0.json:odm/oneplus9/etc/sensor/config/lahaina_aw9610x_0.json|132445e76e560137a4df7600c030d5ddb0a9f3c1
+odm/etc/sensor/config/lahaina_aw9610x_down_0.json:odm/oneplus9/etc/sensor/config/lahaina_aw9610x_down_0.json|a80d879bb3ecaa734d6ac2c0857b6846d5df3907
+odm/etc/sensor/config/lahaina_bmp380.json:odm/oneplus9/etc/sensor/config/lahaina_bmp380.json|131799c39f35f70e6dff895eb37fc5d133fb8282
+odm/etc/sensor/config/lahaina_lps22hb.json:odm/oneplus9/etc/sensor/config/lahaina_lps22hb.json|c6124b9b77985dd35fabb9763b4b171e33bb128e
+odm/etc/sensor/config/lahaina_qrd_ak0991x.json:odm/oneplus9/etc/sensor/config/lahaina_qrd_ak0991x.json|922df33fbc07e1c028c567a1482e0b4d5af4cc56
+odm/etc/sensor/config/lahaina_qrd_alsps.json:odm/oneplus9/etc/sensor/config/lahaina_qrd_alsps.json|6895fcc6b8f0742d706231fa835a7263f117ea9e
+odm/etc/sensor/config/lahaina_qrd_bmi16x.json:odm/oneplus9/etc/sensor/config/lahaina_qrd_bmi16x.json|319614a93c19f9e2b09b439067636b795845dde5
+odm/etc/sensor/config/lahaina_qrd_cct_rear.json:odm/oneplus9/etc/sensor/config/lahaina_qrd_cct_rear.json|5bda0425a6ab47a5255e248623192ccca8dba490
+odm/etc/sensor/config/lahaina_qrd_icm4x6xx.json:odm/oneplus9/etc/sensor/config/lahaina_qrd_icm4x6xx.json|9b9a39a63a32047a82cadee5528cf569ee4ec3d6
+odm/etc/sensor/config/lahaina_qrd_mmc56x3x.json:odm/oneplus9/etc/sensor/config/lahaina_qrd_mmc56x3x.json|5f919de6d82dfe8854926e380bfe97022f410b1d
+odm/etc/sensor/config/lahaina_qrd_sx932x.json:odm/oneplus9/etc/sensor/config/lahaina_qrd_sx932x.json|2de6db3a86499da93e203b716f352008ff9b0ed4
+odm/etc/sensor/config/lahaina_qrd_sx932x_down.json:odm/oneplus9/etc/sensor/config/lahaina_qrd_sx932x_down.json|4bea3ce45b324a9a6075bec381fe2f04f0b3f5c7
+odm/etc/sensor/config/lahaina_tcs3707.json:odm/oneplus9/etc/sensor/config/lahaina_tcs3707.json|27110c033872a3514317e75b74e85977aa19e432
+odm/etc/sensor/sensor_config.json:odm/oneplus9/etc/sensor/sensor_config.json|7dee6dba26a492f6f38397eedf46cdc35d588847
+
+# Sensors - OnePlus 9 Pro
+odm/etc/sensor/config/lahaina_aw9610x_0.json:odm/oneplus9pro/etc/sensor/config/lahaina_aw9610x_0.json
+odm/etc/sensor/config/lahaina_aw9610x_down_0.json:odm/oneplus9pro/etc/sensor/config/lahaina_aw9610x_down_0.json
+odm/etc/sensor/config/lahaina_bmp380.json:odm/oneplus9pro/etc/sensor/config/lahaina_bmp380.json
+odm/etc/sensor/config/lahaina_lps22hb.json:odm/oneplus9pro/etc/sensor/config/lahaina_lps22hb.json
+odm/etc/sensor/config/lahaina_qrd_ak0991x.json:odm/oneplus9pro/etc/sensor/config/lahaina_qrd_ak0991x.json
+odm/etc/sensor/config/lahaina_qrd_alsps.json:odm/oneplus9pro/etc/sensor/config/lahaina_qrd_alsps.json
+odm/etc/sensor/config/lahaina_qrd_bmi26x.json:odm/oneplus9pro/etc/sensor/config/lahaina_qrd_bmi26x.json
+odm/etc/sensor/config/lahaina_qrd_cct_rear.json:odm/oneplus9pro/etc/sensor/config/lahaina_qrd_cct_rear.json
+odm/etc/sensor/config/lahaina_qrd_icm4x6xx.json:odm/oneplus9pro/etc/sensor/config/lahaina_qrd_icm4x6xx.json
+odm/etc/sensor/config/lahaina_qrd_mmc56x3x.json:odm/oneplus9pro/etc/sensor/config/lahaina_qrd_mmc56x3x.json
+odm/etc/sensor/config/lahaina_qrd_sx932x.json:odm/oneplus9pro/etc/sensor/config/lahaina_qrd_sx932x.json
+odm/etc/sensor/config/lahaina_qrd_sx932x_down.json:odm/oneplus9pro/etc/sensor/config/lahaina_qrd_sx932x_down.json
+odm/etc/sensor/config/lahaina_tcs3707.json:odm/oneplus9pro/etc/sensor/config/lahaina_tcs3707.json
+odm/etc/sensor/sensor_config.json:odm/oneplus9pro/etc/sensor/sensor_config.json
+
 # Sensors
 odm/bin/oplus_sensor_fb
 odm/lib64/liboplus_service.so
@@ -2166,6 +2352,12 @@ odm/lib64/liboemcrypto.so
 odm/lib64/libwvhidl.so
 vendor/etc/oplus_Widevine_licenses.pfm
 vendor/lib64/libtrustedapploader.so
+
+# WiFi - from OnePlus 9 (LE2115_11.C.63)
+odm/etc/wifi/bdwlan.elf:odm/oneplus9/etc/wifi/bdwlan.elf|3fad58952ebd879f518880ddac26eb6b9118fdc0
+
+# WiFi - OnePlus 9 Pro
+odm/etc/wifi/bdwlan.elf:odm/oneplus9pro/etc/wifi/bdwlan.elf
 
 # WiFi
 odm/etc/wifi/regdb.bin

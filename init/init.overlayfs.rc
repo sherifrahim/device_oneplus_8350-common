@@ -1,0 +1,67 @@
+#
+# Copyright (C) 2022 The Nameless-AOSP Project
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+
+# OnePlus 9 CN/IN/EU/NA
+on fs && property:ro.boot.prjname=19825
+    mount overlay overlay /odm/etc lowerdir=/odm/oneplus9/etc:/odm/etc
+    mount overlay overlay /odm/etc/audio/sku_lahaina lowerdir=/odm/oneplus9/etc/audio/sku_lahaina:/odm/etc/audio/sku_lahaina
+    mount overlay overlay /odm/etc/acdbdata lowerdir=/odm/oneplus9/etc/acdbdata:/odm/etc/acdbdata
+    mount overlay overlay /odm/etc/bt lowerdir=/odm/oneplus9/etc/bt:/odm/etc/bt
+    mount overlay overlay /odm/etc/lvimfs_params lowerdir=/odm/oneplus9/etc/lvimfs_params:/odm/etc/lvimfs_params
+    mount overlay overlay /odm/etc/init lowerdir=/odm/oneplus9/etc/init:/odm/etc/init
+    mount overlay overlay /odm/etc/camera lowerdir=/odm/oneplus9/etc/camera:/odm/etc/camera
+    mount overlay overlay /odm/etc/sensor lowerdir=/odm/oneplus9/etc/sensor:/odm/etc/sensor
+    mount overlay overlay /odm/etc/wifi lowerdir=/odm/oneplus9/etc/wifi:/odm/etc/wifi
+    mount overlay overlay /odm/firmware lowerdir=/odm/oneplus9/firmware:/odm/firmware
+    mount overlay overlay /odm/lib64/camera lowerdir=/odm/oneplus9/lib64/camera:/odm/lib64/camera
+    mount overlay overlay /odm/vendor/firmware lowerdir=/odm/oneplus9/vendor/firmware:/odm/vendor/firmware
+
+# OnePlus 9 T-Mobile
+on fs && property:ro.boot.prjname=20854
+    mount overlay overlay /odm/etc lowerdir=/odm/oneplus9/etc:/odm/etc
+    mount overlay overlay /odm/etc/audio/sku_lahaina lowerdir=/odm/oneplus9/etc/audio/sku_lahaina:/odm/etc/audio/sku_lahaina
+    mount overlay overlay /odm/etc/acdbdata lowerdir=/odm/oneplus9/etc/acdbdata:/odm/etc/acdbdata
+    mount overlay overlay /odm/etc/bt lowerdir=/odm/oneplus9/etc/bt:/odm/etc/bt
+    mount overlay overlay /odm/etc/lvimfs_params lowerdir=/odm/oneplus9/etc/lvimfs_params:/odm/etc/lvimfs_params
+    mount overlay overlay /odm/etc/init lowerdir=/odm/oneplus9/etc/init:/odm/etc/init
+    mount overlay overlay /odm/etc/camera lowerdir=/odm/oneplus9/etc/camera:/odm/etc/camera
+    mount overlay overlay /odm/etc/sensor lowerdir=/odm/oneplus9/etc/sensor:/odm/etc/sensor
+    mount overlay overlay /odm/etc/wifi lowerdir=/odm/oneplus9/etc/wifi:/odm/etc/wifi
+    mount overlay overlay /odm/firmware lowerdir=/odm/oneplus9/firmware:/odm/firmware
+    mount overlay overlay /odm/lib64/camera lowerdir=/odm/oneplus9/lib64/camera:/odm/lib64/camera
+    mount overlay overlay /odm/vendor/firmware lowerdir=/odm/oneplus9/vendor/firmware:/odm/vendor/firmware
+
+# OnePlus 9 Pro CN/IN/EU/NA 
+on fs && property:ro.boot.prjname=19815
+    mount overlay overlay /odm/etc lowerdir=/odm/oneplus9pro/etc:/odm/etc
+    mount overlay overlay /odm/etc/audio/sku_lahaina lowerdir=/odm/oneplus9pro/etc/audio/sku_lahaina:/odm/etc/audio/sku_lahaina
+    mount overlay overlay /odm/etc/acdbdata lowerdir=/odm/oneplus9pro/etc/acdbdata:/odm/etc/acdbdata
+    mount overlay overlay /odm/etc/lvimfs_params lowerdir=/odm/oneplus9pro/etc/lvimfs_params:/odm/etc/lvimfs_params
+    mount overlay overlay /odm/etc/init lowerdir=/odm/oneplus9pro/etc/init:/odm/etc/init
+    mount overlay overlay /odm/etc/camera lowerdir=/odm/oneplus9pro/etc/camera:/odm/etc/camera
+    mount overlay overlay /odm/etc/inparm/iris5 lowerdir=/odm/oneplus9pro/etc/inparm/iris5:/odm/etc/inparm/iris5
+    mount overlay overlay /odm/etc/sensor lowerdir=/odm/oneplus9pro/etc/sensor:/odm/etc/sensor
+    mount overlay overlay /odm/etc/wifi lowerdir=/odm/oneplus9pro/etc/wifi:/odm/etc/wifi
+    mount overlay overlay /odm/firmware lowerdir=/odm/oneplus9pro/firmware:/odm/firmware
+    mount overlay overlay /odm/lib64/camera lowerdir=/odm/oneplus9pro/lib64/camera:/odm/lib64/camera
+    mount overlay overlay /odm/vendor/firmware lowerdir=/odm/oneplus9pro/vendor/firmware:/odm/vendor/firmware
+    mount overlay overlay /vendor/etc lowerdir=/vendor/oneplus9pro/etc:/vendor/etc
+
+# OnePlus 9 Pro T-Mobile
+on fs && property:ro.boot.prjname=133210
+    mount overlay overlay /odm/etc lowerdir=/odm/oneplus9pro/etc:/odm/etc
+    mount overlay overlay /odm/etc/audio/sku_lahaina lowerdir=/odm/oneplus9pro/etc/audio/sku_lahaina:/odm/etc/audio/sku_lahaina
+    mount overlay overlay /odm/etc/acdbdata lowerdir=/odm/oneplus9pro/etc/acdbdata:/odm/etc/acdbdata
+    mount overlay overlay /odm/etc/lvimfs_params lowerdir=/odm/oneplus9pro/etc/lvimfs_params:/odm/etc/lvimfs_params
+    mount overlay overlay /odm/etc/init lowerdir=/odm/oneplus9pro/etc/init:/odm/etc/init
+    mount overlay overlay /odm/etc/camera lowerdir=/odm/oneplus9pro/etc/camera:/odm/etc/camera
+    mount overlay overlay /odm/etc/inparm/iris5 lowerdir=/odm/oneplus9pro/etc/inparm/iris5:/odm/etc/inparm/iris5
+    mount overlay overlay /odm/etc/sensor lowerdir=/odm/oneplus9pro/etc/sensor:/odm/etc/sensor
+    mount overlay overlay /odm/etc/wifi lowerdir=/odm/oneplus9pro/etc/wifi:/odm/etc/wifi
+    mount overlay overlay /odm/firmware lowerdir=/odm/oneplus9pro/firmware:/odm/firmware
+    mount overlay overlay /odm/lib64/camera lowerdir=/odm/oneplus9pro/lib64/camera:/odm/lib64/camera
+    mount overlay overlay /odm/vendor/firmware lowerdir=/odm/oneplus9pro/vendor/firmware:/odm/vendor/firmware
+    mount overlay overlay /vendor/etc lowerdir=/vendor/oneplus9pro/etc:/vendor/etc

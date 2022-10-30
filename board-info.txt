@@ -1,0 +1,1 @@
+require board=lahaina|OnePlus9|OnePlus9Pro
