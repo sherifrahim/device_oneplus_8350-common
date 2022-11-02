@@ -94,4 +94,9 @@
     <!-- Whether key handler sends intent when changing slider position -->
     <string name="config_alertSliderIntent">org.lineageos.device.DeviceSettings.UPDATE_SLIDER_POSITION</string>
 
+    <!-- Whether the device enable the standalone (SA) mode of 5G NR.-->
+    <bool name="config_telephony5gStandalone">true</bool>
+
+    <!-- Whether the device enable the non-standalone (NSA) mode of 5G NR.-->
+    <bool name="config_telephony5gNonStandalone">true</bool>
 </resources>
