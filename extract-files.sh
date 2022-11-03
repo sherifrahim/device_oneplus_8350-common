@@ -55,7 +55,10 @@ fi
 
 function blob_fixup() {
     case "${1}" in
-        odm/etc/camera/CameraHWConfiguration.config)
+        odm/oneplus9/etc/camera/CameraHWConfiguration.config)
+            sed -i "/SystemCamera = / s/1;/0;/g" "${2}"
+            ;;
+        odm/oneplus9pro/etc/camera/CameraHWConfiguration.config)
             sed -i "/SystemCamera = / s/1;/0;/g" "${2}"
             ;;
         odm/lib64/libui.so)

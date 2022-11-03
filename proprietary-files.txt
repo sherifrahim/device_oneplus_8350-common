@@ -1,7 +1,7 @@
 ## All proprietary files from this list, unless pinned and noted otherwise, are
-## from OnePlus 9 Pro (LE2125_11.C.63).
+## from OnePlus 9 Pro (LE2121_11.C.66).
 
-# ACDBs - from OnePlus 9 (LE2115_11.C.63)
+# OnePlus 9 ACDBs - from LE2111_11.C.66
 odm/etc/acdbdata/Audio_Parameter_Version.txt:odm/oneplus9/etc/acdbdata/Audio_Parameter_Version.txt|1ee607e28afafee6482adae4cdf35dd0a07f0ca2
 odm/etc/acdbdata/Bluetooth_cal.acdb:odm/oneplus9/etc/acdbdata/Bluetooth_cal.acdb|83b02229d2d0a819f357dedbe378c7120407a1a9
 odm/etc/acdbdata/General_cal.acdb:odm/oneplus9/etc/acdbdata/General_cal.acdb|c93194b8cb59c450913b2e7bc0cf1bcdd715c702
@@ -160,7 +160,7 @@ vendor/lib/libhdmipassthru.so
 vendor/lib/libqtigef.so
 vendor/lib64/libadsprpc.so
 
-# Audio lvimfs params - from OnePlus 9 (LE2115_11.C.63)
+# OnePlus 9 Audio lvimfs params - from LE2111_11.C.66
 odm/etc/lvimfs_params/LVACFS_Configuration.txt:odm/oneplus9/etc/lvimfs_params/LVACFS_Configuration.txt|024b3814ee9d35b2954c253ae1a25311d4724902
 odm/etc/lvimfs_params/LVIMFS_Calibration_2mic.dat:odm/oneplus9/etc/lvimfs_params/LVIMFS_Calibration_2mic.dat|ae8a5e7c7ee1a036ebf19a93d0e4e6ad804421ed
 odm/etc/lvimfs_params/LVIMFS_Parameter_ID10_MIC_VR.txt:odm/oneplus9/etc/lvimfs_params/LVIMFS_Parameter_ID10_MIC_VR.txt|cdb512cc69a74e0142f8b8d49ca093faec6be110
@@ -216,7 +216,7 @@ odm/etc/lvimfs_params/LVIMFS_Parameter_ID7_MIC_Interview.txt:odm/oneplus9pro/etc
 odm/etc/lvimfs_params/LVIMFS_Parameter_ID8_MIC_Unprocess.txt:odm/oneplus9pro/etc/lvimfs_params/LVIMFS_Parameter_ID8_MIC_Unprocess.txt
 odm/etc/lvimfs_params/LVIMFS_Parameter_ID9_MIC_Voice.txt:odm/oneplus9pro/etc/lvimfs_params/LVIMFS_Parameter_ID9_MIC_Voice.txt
 
-# Audio firmware - from OnePlus 9 (LE2115_11.C.63)
+# OnePlus 9 Audio firmware - from LE2111_11.C.66
 odm/firmware/tfa98xx.cnt:odm/oneplus9/firmware/tfa98xx.cnt|5578bfb86a4123af049c2885af7b30d3fd0a53e4
 
 # Audio firmware - OnePlus 9 Pro
@@ -256,12 +256,12 @@ vendor/lib64/vendor.qti.hardware.fm@1.0.so
 system_ext/lib64/libaptXHD_encoder.so|e13fa70c97caaa24d061678bdee608eb8850a69e
 system_ext/lib64/libaptX_encoder.so|df1c89d7af1bb35808d5fe3496b04ba066c10cbc
 
-# Bluetooth Firmware - from OnePlus 9 (LE2115_11.C.63)
+# OnePlus 9 Bluetooth Firmware - from LE2111_11.C.66
 odm/etc/bt/hpnv10.bin:odm/oneplus9/etc/bt/hpnv10.bin|b8ecdc55bd912de0973570cc02da350a1e06c7c3
 odm/etc/bt/hpnv10_1.bin:odm/oneplus9/etc/bt/hpnv10_1.bin|326788c5edd8320b8c28a17cba4c00bb4a4e1389
 odm/etc/bt/second_rf.conf:odm/oneplus9/etc/bt/second_rf.conf|148e45dc8b3a46ba1b833878d2bf9f92c8702d26
 
-# Camera - from OnePlus 9 (LE2115_11.C.63)
+# OnePlus 9 Camera - from LE2111_11.C.66
 odm/etc/camera/config/camera_unit_config:odm/oneplus9/etc/camera/config/camera_unit_config|4bb899d87c1248eac01d2c3ebcd3b9ad22cb6ce2
 odm/etc/camera/config/oplus_camera_aps_config:odm/oneplus9/etc/camera/config/oplus_camera_aps_config|7514ce1898fdd477a5dd5044af179941225135c1
 odm/etc/camera/config/oplus_camera_config:odm/oneplus9/etc/camera/config/oplus_camera_config|d093b359fe2632bba685982bf102cb525ecbdc5f
@@ -277,7 +277,7 @@ odm/lib64/camera/com.qti.sensormodule.lemonade.sunny_imx766.bin:odm/oneplus9/lib
 odm/lib64/camera/com.qti.sensormodule.lemonade.sunny_imx766_MP.bin:odm/oneplus9/lib64/camera/com.qti.sensormodule.lemonade.sunny_imx766_MP.bin|10a0a9f7c7ccb3544c169dc54130a2d9576688a5
 odm/lib64/camera/com.qti.sensormodule.lemonade.sunny_imx766_ak7375c.bin:odm/oneplus9/lib64/camera/com.qti.sensormodule.lemonade.sunny_imx766_ak7375c.bin|e4a3944a937d525a1384ec94facefc0de7a0c368
 odm/lib64/camera/com.qti.sensormodule.lemonade.truly_imx471.bin:odm/oneplus9/lib64/camera/com.qti.sensormodule.lemonade.truly_imx471.bin|e964b1f1c4a6f5e95646a9fc53183d5550c38463
-odm/lib64/camera/com.qti.tuned.semco_imx689.bin:odm/oneplus9/lib64/camera/com.qti.tuned.semco_imx689.bin|bdaf4ac0545d019ee6527f1069a15e6f43c072c9
+odm/lib64/camera/com.qti.tuned.semco_imx689.bin:odm/oneplus9/lib64/camera/com.qti.tuned.semco_imx689.bin|772503682f07a4ada0dcaf9a313ef53787dd6df6
 odm/lib64/camera/com.qti.tuned.shine_gc02m1b.bin:odm/oneplus9/lib64/camera/com.qti.tuned.shine_gc02m1b.bin|f3757a70d28c6136b7fb80028119b7356755278c
 
 # Camera - OnePlus 9 Pro
@@ -2081,7 +2081,7 @@ odm/bin/hw/vendor.qti.secure_element@1.2-service
 odm/etc/init/vendor.qti.secure_element@1.2-service.rc
 odm/lib64/android.hardware.secure_element@1.0-impl.so
 
-# Sensors - from OnePlus 9 (LE2115_11.C.63)
+# OnePlus 9 Sensors - from LE2111_11.C.66
 odm/etc/sensor/config/lahaina_aw9610x_0.json:odm/oneplus9/etc/sensor/config/lahaina_aw9610x_0.json|132445e76e560137a4df7600c030d5ddb0a9f3c1
 odm/etc/sensor/config/lahaina_aw9610x_down_0.json:odm/oneplus9/etc/sensor/config/lahaina_aw9610x_down_0.json|a80d879bb3ecaa734d6ac2c0857b6846d5df3907
 odm/etc/sensor/config/lahaina_bmp380.json:odm/oneplus9/etc/sensor/config/lahaina_bmp380.json|131799c39f35f70e6dff895eb37fc5d133fb8282
@@ -2402,7 +2402,7 @@ odm/lib64/libwvhidl.so
 vendor/etc/oplus_Widevine_licenses.pfm
 vendor/lib64/libtrustedapploader.so
 
-# WiFi - from OnePlus 9 (LE2115_11.C.63)
+# OnePlus 9 WiFi - from LE2111_11.C.66
 odm/etc/wifi/bdwlan.elf:odm/oneplus9/etc/wifi/bdwlan.elf|3fad58952ebd879f518880ddac26eb6b9118fdc0
 
 # WiFi - OnePlus 9 Pro
