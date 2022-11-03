@@ -427,4 +427,10 @@
     <!-- Expose number of physical cameras -->
     <integer name="oplus_num_physical_cameras">5</integer>
 
+    <!-- Overlays that to be enabled in FHD+ resolution -->
+    <string-array name="config_fhdResolutionOverlays" translatable="false">
+        <item>org.nameless.display.resolution.fwb</item>
+        <item>org.nameless.display.resolution.sysui</item>
+    </string-array>
+
 </resources>
