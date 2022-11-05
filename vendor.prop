@@ -82,7 +82,7 @@ ro.bluetooth.a2dp_offload.supported=true
 
 # Camera
 vendor.camera.algo.jpeghwencode=0
-vendor.camera.aux.packageexcludelist=org.telegram.messenger,org.thunderdog.challegram
+vendor.camera.aux.packageexcludelist=org.telegram.messenger,org.thunderdog.challegram,us.zoom.videomeetings
 vendor.camera.aux.packagelist=com.oplus.camera
 
 # Chipset
