@@ -127,8 +127,8 @@ vendor/lib/rfsa/adsp/libworker_pool.so
 vendor/lib64/rfsa/adsp/libsns_device_mode_skel.so
 vendor/lib64/rfsa/adsp/libsns_low_lat_stream_skel.so
 
-# ANT+
-vendor/lib64/hw/com.dsi.ant@1.0-impl.so
+# ANT+ - from LA.UM.9.14.r1-20200-LAHAINA.QSSI13.0
+vendor/lib64/hw/com.dsi.ant@1.0-impl.so|a6f313ee471609f35c242550024174bd3ead402d
 
 # Audio
 odm/lib/libaudioEngineerTest.so
@@ -222,35 +222,35 @@ odm/firmware/tfa98xx.cnt:odm/oneplus9/firmware/tfa98xx.cnt|5578bfb86a4123af049c2
 # Audio firmware - OnePlus 9 Pro
 odm/firmware/tfa98xx.cnt:odm/oneplus9pro/firmware/tfa98xx.cnt
 
-# Bluetooth
-vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
-vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
-vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so
-vendor/lib64/libbtnv.so
-vendor/lib64/libsoc_helper.so
+# Bluetooth - from LA.UM.9.14.r1-20200-LAHAINA.QSSI13.0
+vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti|d6dc2016e466fa1af75fdf87687cb7d0da4b6922
+vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc|f4ee3b2da2b08647447869ade86ec63f7340accc
+vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so|9ce946073c60f69250c3e6917dd4b315e23d81b5
+vendor/lib64/libbtnv.so|bf85b8cf3fdbe25604de21e9b870afbf78579a46
+vendor/lib64/libsoc_helper.so|72236f8368980d74fe565b2368f34c24e889014c
 
-# Bluetooth (A2DP)
-vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so
-vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.1-impl.so
-vendor/lib/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so
-vendor/lib/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so
-vendor/lib/hw/vendor.qti.hardware.btconfigstore@2.0-impl.so
-vendor/lib/btaudio_offload_if.so
-vendor/lib/libbluetooth_audio_session_qti.so
-vendor/lib/libbluetooth_audio_session_qti_2_1.so
-vendor/lib/vendor.qti.hardware.bluetooth_sar@1.0.so
-vendor/lib/vendor.qti.hardware.bluetooth_sar@1.1.so
-vendor/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so
-vendor/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.1-impl.so
-vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so
-vendor/lib64/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so
-vendor/lib64/hw/vendor.qti.hardware.btconfigstore@2.0-impl.so
-vendor/lib64/btaudio_offload_if.so
-vendor/lib64/libbluetooth_audio_session_qti.so
-vendor/lib64/libbluetooth_audio_session_qti_2_1.so
-vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so
-vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so
-vendor/lib64/vendor.qti.hardware.fm@1.0.so
+# Bluetooth (A2DP) - from LA.UM.9.14.r1-20200-LAHAINA.QSSI13.0
+vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so|fbde0502d2867d296b017726d267418bf470c398
+vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.1-impl.so|0572fdd80fa967923b3a598578f4ecc546fcf817
+vendor/lib/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so|2443909c9c1489a254a45bc47ca41dd5b935d08f
+vendor/lib/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so|4279398476187e4eaee25b17cc724bd300f79ce5
+vendor/lib/hw/vendor.qti.hardware.btconfigstore@2.0-impl.so|26924b6fcfa37beaf7a3cea26a088fef3dc78265
+vendor/lib/btaudio_offload_if.so|4423b604489b2127980ec0ca5c8a7d5998f73d97
+vendor/lib/libbluetooth_audio_session_qti.so|7a53f9722ca7e3ed3035707cfd7de531a13db7b7
+vendor/lib/libbluetooth_audio_session_qti_2_1.so|25d91c8c74d98536bbf27bfca663f3f17647890c
+vendor/lib/vendor.qti.hardware.bluetooth_sar@1.0.so|e0c3bba159921cf37c544125c655356a25eebf5d
+vendor/lib/vendor.qti.hardware.bluetooth_sar@1.1.so|f807d291d5056b70c1b158239f6b6d312bb8b8d8
+vendor/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so|dd0b36ef9a3bd420513da57b8b54c0aee649fa41
+vendor/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.1-impl.so|6a398996c4c872fdd1efc861256d7de5a0bac09a
+vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so|7003836405234b336a8bbc389636c6c1993ef57d
+vendor/lib64/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so|342f9aad6e6d3ee068bd9ab5f8cb3eec95511a1d
+vendor/lib64/hw/vendor.qti.hardware.btconfigstore@2.0-impl.so|b4c3a295957f5e5bf22bb12b97f74e813909fe10
+vendor/lib64/btaudio_offload_if.so|6657bb86693405cffc3f6a746ec1bccd163283fd
+vendor/lib64/libbluetooth_audio_session_qti.so|c8313c30a247bde48a9934c11ecbe8c5ad410f19
+vendor/lib64/libbluetooth_audio_session_qti_2_1.so|370fb7502778170d0ecccdcb9dee50adf18538a2
+vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so|d28d86ee5a290a31f38ac141a2b9485e9ef06e4e
+vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so|9ad4486873a656cc341dc34f728d57b6a59b36c4
+vendor/lib64/vendor.qti.hardware.fm@1.0.so|ee11be18738a1ce8752eca2e66b70cbe728e47cc
 
 # Bluetooth (aptX) - from raven - TP1A.220624.021
 system_ext/lib64/libaptXHD_encoder.so|e13fa70c97caaa24d061678bdee608eb8850a69e
@@ -262,12 +262,12 @@ odm/etc/bt/hpnv10_1.bin:odm/oneplus9/etc/bt/hpnv10_1.bin|326788c5edd8320b8c28a17
 odm/etc/bt/second_rf.conf:odm/oneplus9/etc/bt/second_rf.conf|148e45dc8b3a46ba1b833878d2bf9f92c8702d26
 
 # OnePlus 9 Camera - from LE2111_11.C.66
-odm/etc/camera/config/camera_unit_config:odm/oneplus9/etc/camera/config/camera_unit_config|4bb899d87c1248eac01d2c3ebcd3b9ad22cb6ce2
-odm/etc/camera/config/oplus_camera_aps_config:odm/oneplus9/etc/camera/config/oplus_camera_aps_config|7514ce1898fdd477a5dd5044af179941225135c1
-odm/etc/camera/config/oplus_camera_config:odm/oneplus9/etc/camera/config/oplus_camera_config|d093b359fe2632bba685982bf102cb525ecbdc5f
 odm/etc/camera/CameraHWConfiguration.config:odm/oneplus9/etc/camera/CameraHWConfiguration.config|79839b688d91eef2abb19c2e67400da009eb6b7b
 odm/etc/camera/calibrationOutput_uw.bin:odm/oneplus9/etc/camera/calibrationOutput_uw.bin|a5bdcc7266d4b2f6eb995cd691576123f765dfbb
 odm/etc/camera/calibrationOutput_uw_686.bin:odm/oneplus9/etc/camera/calibrationOutput_uw_686.bin|0132d59e77f2ecce9cd6e32bcf6602a1d8b4d4d9
+odm/etc/camera/config/camera_unit_config:odm/oneplus9/etc/camera/config/camera_unit_config|4bb899d87c1248eac01d2c3ebcd3b9ad22cb6ce2
+odm/etc/camera/config/oplus_camera_aps_config:odm/oneplus9/etc/camera/config/oplus_camera_aps_config|7514ce1898fdd477a5dd5044af179941225135c1
+odm/etc/camera/config/oplus_camera_config:odm/oneplus9/etc/camera/config/oplus_camera_config|d093b359fe2632bba685982bf102cb525ecbdc5f
 odm/etc/camera/engineer_camera_config:odm/oneplus9/etc/camera/engineer_camera_config|4cc292cc65a9d814005a5f7c1cc31b55b4403bc4
 odm/etc/camera/settings_fdc.txt:odm/oneplus9/etc/camera/settings_fdc.txt|5f6640eb0e2382c704b1ed07117af886510263f8
 odm/lib64/camera/com.qti.sensor.imx689.lemonade.so:odm/oneplus9/lib64/camera/com.qti.sensor.imx689.lemonade.so|2afc614393ae748324d2c44d9d052e7dfdcd744a
@@ -281,13 +281,13 @@ odm/lib64/camera/com.qti.tuned.semco_imx689.bin:odm/oneplus9/lib64/camera/com.qt
 odm/lib64/camera/com.qti.tuned.shine_gc02m1b.bin:odm/oneplus9/lib64/camera/com.qti.tuned.shine_gc02m1b.bin|f3757a70d28c6136b7fb80028119b7356755278c
 
 # Camera - OnePlus 9 Pro
-odm/etc/camera/config/camera_unit_config:odm/oneplus9pro/etc/camera/config/camera_unit_config
-odm/etc/camera/config/oplus_camera_aps_config:odm/oneplus9pro/etc/camera/config/oplus_camera_aps_config
-odm/etc/camera/config/oplus_camera_config:odm/oneplus9pro/etc/camera/config/oplus_camera_config
 odm/etc/camera/CameraHWConfiguration.config:odm/oneplus9pro/etc/camera/CameraHWConfiguration.config
 odm/etc/camera/calibrationOutput_uw.bin:odm/oneplus9pro/etc/camera/calibrationOutput_uw.bin
 odm/etc/camera/calibrationOutput_uw_686.bin:odm/oneplus9pro/etc/camera/calibrationOutput_uw_686.bin
 odm/etc/camera/calibrationOutput_wt.bin:odm/oneplus9pro/etc/camera/calibrationOutput_wt.bin
+odm/etc/camera/config/camera_unit_config:odm/oneplus9pro/etc/camera/config/camera_unit_config
+odm/etc/camera/config/oplus_camera_aps_config:odm/oneplus9pro/etc/camera/config/oplus_camera_aps_config
+odm/etc/camera/config/oplus_camera_config:odm/oneplus9pro/etc/camera/config/oplus_camera_config
 odm/etc/camera/engineer_camera_config:odm/oneplus9pro/etc/camera/engineer_camera_config
 odm/etc/camera/settings_fdc.txt:odm/oneplus9pro/etc/camera/settings_fdc.txt
 odm/etc/init/calibrationOutput_wt.rc:odm/oneplus9pro/etc/init/calibrationOutput_wt.rc
@@ -1390,49 +1390,47 @@ vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti
 vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc
 vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so
 
-# Graphics (Adreno)
-vendor/gpu/kbc/sequence_manifest.bin
-vendor/gpu/kbc/unified_kbcs_32.bin
-vendor/gpu/kbc/unified_kbcs_64.bin
-vendor/gpu/kbc/unified_ksqs.bin
-vendor/lib/egl/eglSubDriverAndroid.so
-vendor/lib/egl/libEGL_adreno.so
-vendor/lib/egl/libGLESv1_CM_adreno.so
-vendor/lib/egl/libGLESv2_adreno.so
-vendor/lib/egl/libq3dtools_adreno.so
-vendor/lib/egl/libq3dtools_esx.so
-vendor/lib/libC2D2.so
-vendor/lib/libCB.so
-vendor/lib/libOpenCL.so
-vendor/lib/libVkLayer_q3dtools.so
-vendor/lib/libadreno_app_profiles.so
-vendor/lib/libadreno_utils.so
-vendor/lib/libc2d30_bltlib.so
-vendor/lib/libgpudataproducer.so
-vendor/lib/libgsl.so
-vendor/lib/libkcl.so
-vendor/lib/libkernelmanager.so
-vendor/lib/libllvm-glnext.so
-vendor/lib/libllvm-qcom.so
-vendor/lib64/egl/eglSubDriverAndroid.so
-vendor/lib64/egl/libEGL_adreno.so
-vendor/lib64/egl/libGLESv1_CM_adreno.so
-vendor/lib64/egl/libGLESv2_adreno.so
-vendor/lib64/egl/libq3dtools_adreno.so
-vendor/lib64/egl/libq3dtools_esx.so
-vendor/lib64/libC2D2.so
-vendor/lib64/libCB.so
-vendor/lib64/libOpenCL.so
-vendor/lib64/libVkLayer_q3dtools.so
-vendor/lib64/libadreno_app_profiles.so
-vendor/lib64/libadreno_utils.so
-vendor/lib64/libc2d30_bltlib.so
-vendor/lib64/libgpudataproducer.so
-vendor/lib64/libgsl.so
-vendor/lib64/libkcl.so
-vendor/lib64/libkernelmanager.so
-vendor/lib64/libllvm-glnext.so
-vendor/lib64/libllvm-qcom.so
+# Graphics (Adreno) - from LA.VENDOR.1.0.r1-16000-WAIPIO.QSSI13.0
+vendor/gpu/kbc/sequence_manifest.bin|7554c4f09fe34519f9d657242ff971de00b450b6
+vendor/gpu/kbc/unified_kbcs_32.bin|d8e2e5a654359db22324eb59868a36168ec27a24
+vendor/gpu/kbc/unified_kbcs_64.bin|66030757a29386eadcf2ac919554b07a0426a1e2
+vendor/gpu/kbc/unified_ksqs.bin|fb6f2bac1336dff6394920531c9e396ba54641e6
+vendor/lib/egl/eglSubDriverAndroid.so|5559c6f4aeab092a07eb3180d5ab259262aa41ca
+vendor/lib/egl/libEGL_adreno.so|f5eec6f7007490f875207e13246c9e221644f407
+vendor/lib/egl/libGLESv1_CM_adreno.so|25ea6fa82b87c567573c05fe8878c3e1effccdc7
+vendor/lib/egl/libGLESv2_adreno.so|1c0b252acd4b86a122f86c3cc0b2c8a7b9ea13da
+vendor/lib/egl/libVkLayer_ADRENO_qprofiler.so|5aef9972c054f8bb970010cbfa11f9269d03c969
+vendor/lib/egl/libq3dtools_adreno.so|de3e24252a19dcd496905ccd21101f279c222a34
+vendor/lib/egl/libq3dtools_esx.so|a26d234f0e7da0d819a897ef2dc607e4545abf6a
+vendor/lib/libCB.so|a894879384c4abf0214b8b1598d76b4f635a8f5c
+vendor/lib/libOpenCL.so|39b84992a5d6ae5951ad6381bbf2eef28c7bd8d2
+vendor/lib/libadreno_app_profiles.so|d4731fb96e93e2b6ba4c82d3e61e40830579eb8a
+vendor/lib/libadreno_utils.so|9abd91a286c4590f1112ea9b0be9efec72b26918
+vendor/lib/libgpudataproducer.so|300fe4e6446f1cf05f4e69758712e79083ee5b60
+vendor/lib/libgsl.so|6721cbf91e98e22b00865b9fae2ce0ede8cc9858
+vendor/lib/libkcl.so|a082844b2a9f8aca81a6b4573bb826906935eb11
+vendor/lib/libkernelmanager.so|2e7ca13df875460b9b1c1d06b24e95a121ab9333
+vendor/lib/libllvm-glnext.so|0749d4bf09a20a3a39cd8bbba16549e0483991eb
+vendor/lib/libllvm-qcom.so|bced6608e13bd40f7887958c3235b6de27ff9fca
+vendor/lib/libllvm-qgl.so|252390f636c75e94458af1f4a3c99ba8b857dc3f
+vendor/lib64/egl/eglSubDriverAndroid.so|0cd71b78887bc1819d2854903368db86d07c17b5
+vendor/lib64/egl/libEGL_adreno.so|44c3681762487a38f5ef011a4cfc8f372c3aa319
+vendor/lib64/egl/libGLESv1_CM_adreno.so|1ac6262ebf6852d558391f1d30e2e97e83956b6c
+vendor/lib64/egl/libGLESv2_adreno.so|6aee4a79303df646d1acd549b5f2e0e096739d2d
+vendor/lib64/egl/libVkLayer_ADRENO_qprofiler.so|1ded09d75c3974c07bf9af8eb7cd1135d4c8d84e
+vendor/lib64/egl/libq3dtools_adreno.so|40e30c38fb6760d4ca46beae6cdcfc5b2d9505b1
+vendor/lib64/egl/libq3dtools_esx.so|62bb055b9b0eab3646ebf0507b59cd5928fb0b00
+vendor/lib64/libCB.so|68b3662f12f19762a7c51bb20b2abf02c51f0a48
+vendor/lib64/libOpenCL.so|a3df76d4bdb16b2595ad5428920dcf973f2db059
+vendor/lib64/libadreno_app_profiles.so|3ad7503f0d91316ed85356a62d2110a38b58aea3
+vendor/lib64/libadreno_utils.so|2d8b1da72f2dfc7956db22810773b9a763273313
+vendor/lib64/libgpudataproducer.so|86e33e6dc3be94f7cb624ca56cf0573d260d73af
+vendor/lib64/libgsl.so|7fe9ab951b0a9b98e76375a6df729f8c53874fed
+vendor/lib64/libkcl.so|b03e346f16649ee8ee50e94a5b079fbebc10d3ed
+vendor/lib64/libkernelmanager.so|390249c8a1b9eb1147a8da583fae16d6a606e38b
+vendor/lib64/libllvm-glnext.so|a25f52ed2acede6700cf5a28344aeb7409aa7ab2
+vendor/lib64/libllvm-qcom.so|5248a4e3e3f35b6a205f08b6ab732e4c411c28c8
+vendor/lib64/libllvm-qgl.so|15e1c0b0c7aaedbdac762d5020fcad06110b1856
 
 # Graphics (Adreno firmware)
 vendor/firmware/a660_gmu.bin
@@ -1443,9 +1441,9 @@ vendor/firmware/a660_zap.b02
 vendor/firmware/a660_zap.elf
 vendor/firmware/a660_zap.mdt
 
-# Graphics (Vulkan)
-vendor/lib/hw/vulkan.adreno.so
-vendor/lib64/hw/vulkan.adreno.so
+# Graphics (Vulkan) - from LA.VENDOR.1.0.r1-16000-WAIPIO.QSSI13.0
+vendor/lib/hw/vulkan.adreno.so|98244829b298594f0e7eef0492d7190f55261a0b
+vendor/lib64/hw/vulkan.adreno.so|cadeabac4877664c6e64485dbc43af96bf3aa5de
 
 # GNSS
 odm/etc/izat.conf
@@ -1704,9 +1702,9 @@ odm/lib64/vendor.pixelworks.hardware.feature@1.0.so
 vendor/lib64/libpwirisfeature.so
 vendor/lib64/libpwirishalwrapper.so
 
-# IRQ balance
-vendor/bin/msm_irqbalance
-vendor/etc/msm_irqbalance.conf
+# IRQ balance - from LA.UM.9.14.r1-20200-LAHAINA.QSSI13.0
+vendor/bin/msm_irqbalance|f16cd993154581baaf60d4a1f2d9f8b0a5ee1f82
+vendor/etc/msm_irqbalance.conf|39d0d339b3551e44258360abdb6e55e047983485
 
 # Kernel
 vendor/bin/init.kernel.post_boot-lahaina.sh
@@ -1842,10 +1840,11 @@ vendor/bin/hw/vendor.qti.hardware.perf@2.2-service|d7dc9aa34d48ed62f469a89bb8455
 vendor/etc/init/vendor.qti.hardware.perf@2.2-service.rc|459b4c23550a56ac545f78c6d391f3d7dd9ba45b
 vendor/etc/perf/commonresourceconfigs.xml|c03bd36054bb5d327ad12dc711b58b3f658d261c
 vendor/etc/perf/commonsysnodesconfigs.xml|77ea36edec83f67f5c5591f36bd0f75e361db097
-vendor/etc/perf/perfboostsconfig.xml|a1df9c8afc83e878e80382f151fe0bf8505f934f
+vendor/etc/perf/perfboostsconfig.xml|8e4e7a0eca8040e600b2f65a38d3b6ca017a26ff
 vendor/etc/perf/perfconfigstore.xml|665105d2e39cf00c9508c8e7af89583bcbdcedb5
 vendor/etc/perf/targetconfig.xml|33128deb6c62a8cecf491c6c0c13d18e811cfe81
-vendor/etc/perf/targetresourceconfigs.xml|22205d1cb3ff441f4802355cf873bda34c4e5e97
+vendor/etc/perf/targetresourceconfigs.xml|6447c05b552dbea7492b6cf28082a8d33996ec0a
+vendor/etc/task_profiles.json|e53e07c77a06fd3b888629868d0b400e696d9640
 vendor/lib/libperfconfig.so|537c5677f965b6c652729c2a1287700126bb811f
 vendor/lib/libperfgluelayer.so|98fb1db13c1bb9c4d27b40c335146b52d7c80af5
 vendor/lib/libperfioctl.so|47c985388005e08a2af46e5dcba87e90608a8ec1
@@ -1867,41 +1866,40 @@ vendor/lib64/libskewknob.so|f25b655771a47cc11466e7ab9437fc0b3753a558
 # Perf
 odm/lib64/vendor.oplus.hardware.performance@1.0.so
 vendor/etc/powerhint.xml
-vendor/etc/task_profiles.json
 
-# Perf LM
-vendor/etc/lm/prekill/prekill_2GB.data
-vendor/etc/lm/prekill/prekill_4GB.data
-vendor/etc/lm/prekill/prekill_6GB.data
-vendor/etc/lm/AdaptLaunchFeature.xml
-vendor/etc/lm/AppClassifierFeature.xml
-vendor/etc/lm/GameOptimizationFeature.xml
-vendor/etc/lm/PreKillFeature.xml
-vendor/etc/lm/gPLAFFeature.xml
-vendor/etc/lm/sPLHFeature.xml
-vendor/lib64/libadaptlaunch.so
-vendor/lib64/libappclassifier.so
-vendor/lib64/libgameoptfeature.so
-vendor/lib64/libgplaf.so
-vendor/lib64/liblmutils-ns.so
-vendor/lib64/libmemperfd.so
-vendor/lib64/libmeters-ns.so
-vendor/lib64/libprekill.so
-vendor/lib64/libqti-iopd-client.so
-vendor/lib64/libqti-iopd.so
-vendor/lib64/libsplh.so
-vendor/lib64/vendor.qti.hardware.iop@2.0.so
-vendor/lib64/vendor.qti.memory.pasrmanager@1.0.so
-vendor/lib64/vendor.qti.memory.pasrmanager@1.1.so
+# Perf LM - from LA.UM.9.14.r1-20200-LAHAINA.QSSI13.0
+vendor/etc/lm/prekill/prekill_2GB.data|c731aed560f7a8f0ac077ec989cc9c6e106e4cc5
+vendor/etc/lm/prekill/prekill_4GB.data|d44007e12419b7e433ab26d3534d104fa4a88b72
+vendor/etc/lm/prekill/prekill_6GB.data|dbf72257628f2da4979726b046377673cb33d6e8
+vendor/etc/lm/AdaptLaunchFeature.xml|2384a0735410063a0722c83fb5169ada612bbd35
+vendor/etc/lm/AppClassifierFeature.xml|9bb1a5d80b1f39913a288a6607100eab0f104b74
+vendor/etc/lm/GameOptimizationFeature.xml|d40e022c7563e632bd5f1a221d6b27d33d4fc3b5
+vendor/etc/lm/PreKillFeature.xml|6e6e7bc843c3632e8ddedf6299bd9f7d2e0878ef
+vendor/etc/lm/gPLAFFeature.xml|9ffa9ad28fcc9d6d2a08db078d63cab4514fb9bb
+vendor/etc/lm/sPLHFeature.xml|08d19795671d4f8abfab55e4bf4f2c2a2d3e2374
+vendor/lib64/libadaptlaunch.so|264897f197ca6139354a498d206f93a2d86a001b
+vendor/lib64/libappclassifier.so|96ef3fa3efcf47438a218b63ce360be006a27a05
+vendor/lib64/libgameoptfeature.so|9c1d467940d4f2eb2829cff64645304234c6be69
+vendor/lib64/libgplaf.so|0ab48efc22a2b260c09b3726dd896caf631c1ad2
+vendor/lib64/liblmutils-ns.so|f360681785fe8506785d2020d69130ceaaefb693
+vendor/lib64/libmemperfd.so|27b50cbca03cdb743572ff94b492f7a5fdf94a5f
+vendor/lib64/libmeters-ns.so|157ad9ad1673764dfa5530d91811c4c13f4fd5eb
+vendor/lib64/libprekill.so|2c6455fac3fe5f6dbd2c2cb8d5f605f297835063
+vendor/lib64/libqti-iopd-client.so|9e7561634158cd01b037e740e51cb22cd1119e04
+vendor/lib64/libqti-iopd.so|54d179d3fa04ee6e30e1053ae91d08ef2cba9007
+vendor/lib64/libsplh.so|9ee7189cba3a0e0e7cf5ade24cad6c45e83cbaef
+vendor/lib64/vendor.qti.hardware.iop@2.0.so|81564be065d66ec65b0bfc523102ae63b2f7249f
+vendor/lib64/vendor.qti.memory.pasrmanager@1.0.so|fc3c761b2654b83a4216eadf8dc8698540b2de1f
+vendor/lib64/vendor.qti.memory.pasrmanager@1.1.so|db794e0ba79fd310a8427cbcae03be05008c429f
 
-# Power-off alarm
-product/app/PowerOffAlarm/PowerOffAlarm.apk|888f3282ef0824184051bce7d1990f4b314a3cff
-system_ext/framework/vendor.qti.hardware.alarm-V1.0-java.jar
-vendor/bin/hw/vendor.qti.hardware.alarm@1.0-service
-vendor/bin/power_off_alarm
-vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc
-vendor/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so
-vendor/lib64/vendor.qti.hardware.alarm@1.0.so
+# Power-off alarm - from LA.UM.9.14.r1-20200-LAHAINA.QSSI13.0
+product/app/PowerOffAlarm/PowerOffAlarm.apk|bc906abd03e4a243201dde626b6580fd8a4f73ce
+system_ext/framework/vendor.qti.hardware.alarm-V1.0-java.jar|6508f5708221399eb8bd9754dc49bad32a911e27
+vendor/bin/hw/vendor.qti.hardware.alarm@1.0-service|7894b5b94626fe4f6beb0761dab8221295382258
+vendor/bin/power_off_alarm|4daf3facda380ea8ef31ad3b56f1d216eec4183a
+vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc|a03a9a1c818595b19272ea6ffb466e23a7fc3b05
+vendor/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so|0b5b86c7ea668197244b83dad4d686897b5e4fb4
+vendor/lib64/vendor.qti.hardware.alarm@1.0.so|668fa46809fba01ab1e0f7af8e8457d94b6b1548
 
 # QCC
 vendor/lib64/vendor.qti.hardware.qccsyshal@1.0.so
@@ -1957,11 +1955,11 @@ vendor/etc/seccomp_policy/qspm.policy
 vendor/lib64/vendor.qti.qspmhal@1.0-impl.so
 vendor/lib64/vendor.qti.qspmhal@1.0.so
 
-# QTI service tracker
-vendor/bin/hw/vendor.qti.hardware.servicetracker@1.2-service
-vendor/etc/init/vendor.qti.hardware.servicetracker@1.2-service.rc
-vendor/etc/vintf/manifest/vendor.qti.hardware.servicetracker@1.2-service.xml
-vendor/lib64/hw/vendor.qti.hardware.servicetracker@1.2-impl.so
+# QTI service tracker - from LA.UM.9.14.r1-20200-LAHAINA.QSSI13.0
+vendor/bin/hw/vendor.qti.hardware.servicetracker@1.2-service|43271910678884fc8ee9a01e27595929187411e0
+vendor/etc/init/vendor.qti.hardware.servicetracker@1.2-service.rc|7cf06148da895586c20aab7e6bd01b806d8128b6
+vendor/etc/vintf/manifest/vendor.qti.hardware.servicetracker@1.2-service.xml|40b6abd9b4be99dc5722eb60d71ee36764bf4ef3
+vendor/lib64/hw/vendor.qti.hardware.servicetracker@1.2-impl.so|57df1a5230017753d4c7525a50b3ca3df01c5f35
 
 # RIL
 odm/lib64/vendor.oplus.hardware.appradio@1.0.so
@@ -2242,11 +2240,11 @@ vendor/etc/thermal-engine.conf
 -vendor/lib/libthermalclient.so
 -vendor/lib64/libthermalclient.so
 
-# Time services
-vendor/app/TimeService/TimeService.apk
-vendor/bin/time_daemon
-vendor/etc/init/init.time_daemon.rc
-vendor/lib64/libtime_genoff.so
+# Time services - from LA.UM.9.14.r1-20200-LAHAINA.QSSI13.0
+vendor/app/TimeService/TimeService.apk|92317b3b72586489456d37057b4c3c8e55863923
+vendor/bin/time_daemon|4c2a0ff6d2322c9fda64321b12bba62aa30bc385
+vendor/etc/init/init.time_daemon.rc|b253ca2a498757e14e1d7a051bf504ae09218f51
+vendor/lib64/libtime_genoff.so|2ed540a100dae631070b6e06c01c56c0cfce6484
 
 # Touchscreen firmware
 odm/firmware/tp/19815/FW_S3908_SAMSUNG.img
