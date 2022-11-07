@@ -44,6 +44,7 @@ TARGET_2ND_CPU_VARIANT := generic
 TARGET_2ND_CPU_VARIANT_RUNTIME := kryo385
 
 # Assert
+TARGET_BOARD_INFO_FILE := $(DEVICE_PATH)/board-info.txt
 TARGET_OTA_ASSERT_DEVICE := lahaina|lemonade|OnePlus9|oneplus9|lemonadep|OnePlus9Pro|oneplus9pro
 
 # Audio
