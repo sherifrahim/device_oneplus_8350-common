@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_lahaina.mk
+    $(LOCAL_DIR)/lineage_lahaina.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_lahaina-user \
-    aosp_lahaina-userdebug \
-    aosp_lahaina-eng
+    lineage_lahaina-user \
+    lineage_lahaina-userdebug \
+    lineage_lahaina-eng

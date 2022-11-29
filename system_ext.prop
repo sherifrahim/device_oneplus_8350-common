@@ -1,3 +1,11 @@
+# ADB debugging
+#ro.secure=1
+ro.adb.secure=0
+persist.service.adb.enable=1
+persist.service.debuggable=1
+persist.sys.usb.config=mtp,adb
+persist.adb.notify=1
+
 # Bluetooth
 persist.bluetooth.bqr.event_mask=0x8000000E
 persist.bluetooth.bqr.min_interval_ms=60000
