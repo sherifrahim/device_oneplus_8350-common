@@ -7,3 +7,12 @@ ro.af.client_heap_size_kbyte=7168
 
 # GMS
 ro.opa.device_model_id=ga-oplus-skill-os121-211011
+
+# Adb
+ifeq ($(TARGET_BUILD_VARIANT),eng)
+# /vendor/default.prop is force-setting ro.adb.secure=1
+# Get rid of that by overriding it in /product on eng builds
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.secure=0 \
+    ro.adb.secure=0
+endif

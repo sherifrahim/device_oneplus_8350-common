@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_lahaina.mk
+    $(LOCAL_DIR)/derp_lahaina.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_lahaina-user \
-    lineage_lahaina-userdebug \
-    lineage_lahaina-eng
+    derp_lahaina-user \
+    derp_lahaina-userdebug \
+    derp_lahaina-eng
