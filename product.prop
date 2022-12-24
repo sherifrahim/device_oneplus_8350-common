@@ -11,3 +11,16 @@ ro.opa.device_model_id=ga-oplus-skill-os121-211011
 # Google Lens
 ro.com.google.lens.oem_camera_package=com.oplus.camera
 ro.com.google.lens.oem_image_package=com.oneplus.gallery
+
+# Adb
+ifeq ($(TARGET_BUILD_VARIANT),eng)
+# /vendor/default.prop is force-setting ro.adb.secure=1
+# Get rid of that by overriding it in /product on eng builds
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.secure=0 \
+    ro.adb.secure=0 \
+persist.service.adb.enable=1 \
+persist.service.debuggable=1 \
+persist.sys.usb.config=mtp,adb \
+persist.adb.notify=1
+endif
