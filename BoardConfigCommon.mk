@@ -8,7 +8,8 @@ BUILD_BROKEN_DUP_RULES := true
 BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 
 COMMON_PATH := device/oneplus/sm8350-common
-BOARD_KERNEL_CMDLINE := androidboot.selinux=permissive
+#BOARD_KERNEL_CMDLINE := androidboot.selinux=permissive
+BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 
 # A/B
 AB_OTA_UPDATER := true
