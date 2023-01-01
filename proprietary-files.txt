@@ -997,7 +997,6 @@ vendor/lib64/libhdr_tm.so
 # Display (HWC)
 vendor/bin/qdcmss
 vendor/etc/init/qdcmss.rc
-vendor/lib64/libdpps.so
 vendor/lib64/libqdcm-mode-parser.so
 vendor/lib64/libqdutils.so
 vendor/lib64/libsnapdragoncolor-manager.so
