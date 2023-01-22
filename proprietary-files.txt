@@ -1201,6 +1201,8 @@ vendor/lib64/vendor.qti.hardware.display.mapper@2.0.so
 vendor/lib/vendor.qti.hardware.display.mapper@2.0.so
 vendor/lib64/vendor.qti.hardware.display.mapper@1.1.so
 vendor/lib/vendor.qti.hardware.display.mapper@1.1.so
+vendor/lib/vendor.qti.hardware.display.mapper@3.0.so
+vendor/lib64/vendor.qti.hardware.display.mapper@3.0.so
 
 # DPM
 system_ext/bin/dpmd
@@ -1614,6 +1616,8 @@ odm/lib64/vendor.pixelworks.hardware.display@1.1.so
 odm/lib64/vendor.pixelworks.hardware.feature@1.0.so
 vendor/lib64/libpwirisfeature.so
 vendor/lib64/libpwirishalwrapper.so
+vendor/lib/vendor.display.config@2.0.so
+vendor/lib64/vendor.display.config@2.0.so
 
 # IRQ balance
 vendor/bin/msm_irqbalance
@@ -2377,3 +2381,4 @@ vendor/lib/libwfduibcsrcinterface_proprietary.so
 vendor/lib/libwfdutils_proprietary.so
 vendor/lib/vendor.qti.hardware.wifidisplaysession@1.0.so
 vendor/lib/vendor.qti.hardware.wifidisplaysessionl@1.0-halimpl.so
+vendor/lib/libwfdaac_vendor.so
