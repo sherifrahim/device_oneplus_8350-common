@@ -67,6 +67,10 @@ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(COMMON_PATH)/bluetooth/include
 # Camera
 TARGET_USES_OPLUS_CAMERA := true
 
+# Display
+include hardware/qcom-caf/sm8350/display/config/display-board.mk
+SOONG_CONFIG_qtidisplay_udfps := true
+
 # Properties
 TARGET_ODM_PROP += $(COMMON_PATH)/odm.prop
 TARGET_PRODUCT_PROP += $(COMMON_PATH)/product.prop
