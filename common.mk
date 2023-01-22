@@ -128,9 +128,6 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 PRODUCT_SET_DEBUGFS_RESTRICTIONS := true
 
 # Display
-PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/android.hardware.touchscreen.multitouch.jazzhand.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.touchscreen.multitouch.jazzhand.xml
-
 PRODUCT_PACKAGES += \
     android.hardware.graphics.common-V1-ndk.vendor \
     android.hardware.graphics.common-V1-ndk_platform \
@@ -138,14 +135,8 @@ PRODUCT_PACKAGES += \
     libqservice \
     libtinyxml
 
-PRODUCT_VENDOR_PROPERTIES += \
-    debug.sf.frame_rate_multiple_threshold=60 \
-    ro.surface_flinger.refresh_rate_switching=true \
-    ro.surface_flinger.use_content_detection_for_refresh_rate=true \
-    vendor.display.primary_mixer_stages=9 \
-    vendor.display.enable_async_powermode=0
-
-$(call inherit-product, hardware/qcom-caf/sm8350/display/config/display-product.mk)
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.touchscreen.multitouch.jazzhand.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.touchscreen.multitouch.jazzhand.xml
 
 # Doze
 PRODUCT_PACKAGES += \
