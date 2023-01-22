@@ -494,12 +494,12 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.ipsec_tunnels.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.ipsec_tunnels.xml
 
 # WiFi Display
-PRODUCT_PACKAGES += \
-    libnl \
-    libwfdaac_vendor
+#PRODUCT_PACKAGES += \
+#    libnl \
+#    libwfdaac_vendor
 
-PRODUCT_BOOT_JARS += \
-    WfdCommon
+#PRODUCT_BOOT_JARS += \
+#    WfdCommon
 
 # Inherit from the proprietary files makefile.
 $(call inherit-product, vendor/oneplus/sm8350-common/sm8350-common-vendor.mk)
