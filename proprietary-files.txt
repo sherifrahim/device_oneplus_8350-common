@@ -1607,6 +1607,7 @@ vendor/lib64/libpwirishalwrapper.so
 vendor/bin/msm_irqbalance
 
 # Kernel
+vendor/bin/init.kernel.post_boot-lahaina.sh
 vendor/bin/init.kernel.post_boot.sh
 vendor/bin/init.qti.kernel.sh
 vendor/bin/vendor_modprobe.sh
