@@ -111,7 +111,7 @@ BOARD_KERNEL_SEPARATED_DTBO := true
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
 BOARD_RAMDISK_USE_LZ4 := true
 TARGET_KERNEL_SOURCE := kernel/oneplus/sm8350
-TARGET_KERNEL_CONFIG := evo_defconfig
+TARGET_KERNEL_CONFIG := vendor/lahaina-qgki_defconfig
 TARGET_KERNEL_NO_GCC := true
 
 # Kernel modules
