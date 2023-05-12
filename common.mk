@@ -326,7 +326,7 @@ PRODUCT_ENFORCE_RRO_TARGETS := *
 
 # AOSP Overlay
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay-aosp
+    $(LOCAL_PATH)/overlay-lineage
 
 # OPLUS Common Overlay
 PRODUCT_PACKAGES += \
