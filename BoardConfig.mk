@@ -3,12 +3,11 @@
 #
 # SPDX-License-Identifier: Apache-2.0
 #
+DEVICE_PATH := device/oneplus/lemonadep
 
 BUILD_BROKEN_DUP_RULES := true
 BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 BUILD_BROKEN_MISSING_REQUIRED_MODULES := true
-
-COMMON_PATH := device/oneplus/sm8350-common
 
 # A/B
 AB_OTA_UPDATER := true
@@ -59,28 +58,31 @@ BOARD_USES_ALSA_AUDIO := true
 TARGET_BOOTLOADER_BOARD_NAME := lahaina
 
 # Bluetooth
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(COMMON_PATH)/bluetooth/include
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth/include
+
+# Display
+TARGET_SCREEN_DENSITY := 450
 
 # Properties
-TARGET_ODM_PROP += $(COMMON_PATH)/odm.prop
-TARGET_PRODUCT_PROP += $(COMMON_PATH)/product.prop
-TARGET_SYSTEM_EXT_PROP += $(COMMON_PATH)/system_ext.prop
-TARGET_VENDOR_PROP += $(COMMON_PATH)/vendor.prop
+TARGET_ODM_PROP += $(DEVICE_PATH)/odm.prop
+TARGET_PRODUCT_PROP += $(DEVICE_PATH)/product.prop
+TARGET_SYSTEM_EXT_PROP += $(DEVICE_PATH)/system_ext.prop
+TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 
 # Filesystem
-TARGET_FS_CONFIG_GEN := $(COMMON_PATH)/config.fs
+TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/config.fs
 
 # Fingerprint
 TARGET_SURFACEFLINGER_UDFPS_LIB := //vendor/hardware/oplus:libudfps_extension.oplus
 
 # HIDL
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
-    $(COMMON_PATH)/device_framework_matrix.xml \
+    $(DEVICE_PATH)/device_framework_matrix.xml \
     hardware/qcom-caf/common/vendor_framework_compatibility_matrix.xml
 
-DEVICE_MATRIX_FILE := $(COMMON_PATH)/compatibility_matrix.xml
-DEVICE_MANIFEST_FILE := $(COMMON_PATH)/manifest.xml
-ODM_MANIFEST_FILES := $(COMMON_PATH)/manifest_odm.xml
+DEVICE_MATRIX_FILE := $(DEVICE_PATH)/compatibility_matrix.xml
+DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
+ODM_MANIFEST_FILES := $(DEVICE_PATH)/manifest_odm.xml
 
 # Kernel
 TARGET_NO_KERNEL_OVERRIDE := true
@@ -112,10 +114,10 @@ BOARD_RAMDISK_USE_LZ4 := true
 # Kernel modules
 KERNEL_MODULE_DIR := $(TARGET_KERNEL_DIR)
 KERNEL_MODULES := $(wildcard $(KERNEL_MODULE_DIR)/*.ko)
-BOARD_VENDOR_KERNEL_MODULES_BLOCKLIST_FILE := $(COMMON_PATH)/modules.blocklist
-BOARD_VENDOR_KERNEL_MODULES_LOAD := $(strip $(shell cat $(COMMON_PATH)/modules.load))
+BOARD_VENDOR_KERNEL_MODULES_BLOCKLIST_FILE := $(DEVICE_PATH)/modules.blocklist
+BOARD_VENDOR_KERNEL_MODULES_LOAD := $(strip $(shell cat $(DEVICE_PATH)/modules.load))
 BOARD_BUILD_VENDOR_RAMDISK_IMAGE := true
-BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD := $(strip $(shell cat $(COMMON_PATH)/modules.load.recovery))
+BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD := $(strip $(shell cat $(DEVICE_PATH)/modules.load.recovery))
 BOARD_VENDOR_KERNEL_MODULES := $(KERNEL_MODULES)
 BOOT_KERNEL_MODULES := $(BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD)
 BOARD_VENDOR_RAMDISK_KERNEL_MODULES := $(KERNEL_MODULE_DIR)/msm_drm.ko
@@ -152,16 +154,21 @@ TARGET_COPY_OUT_VENDOR_DLKM := vendor_dlkm
 # Power
 TARGET_TAP_TO_WAKE_NODE := "/proc/touchpanel/double_tap_enable"
 
+# Properties
+TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
+
 # Recovery
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 BOARD_MOVE_RECOVERY_RESOURCES_TO_VENDOR_BOOT := true
-TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/init/fstab.default
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/init/fstab.default
 TARGET_RECOVERY_PIXEL_FORMAT := RGBX_8888
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
+TARGET_RECOVERY_DENSITY := xxhdpi
+TARGET_RECOVERY_UI_MARGIN_HEIGHT := 103
 
 # RIL
-CUSTOM_APNS_FILE := $(COMMON_PATH)/configs/apns-conf.xml
+CUSTOM_APNS_FILE := $(DEVICE_PATH)/configs/apns-conf.xml
 ENABLE_VENDOR_RIL_SERVICE := true
 
 # Security
@@ -171,7 +178,7 @@ VENDOR_SECURITY_PATCH := $(BOOT_SECURITY_PATCH)
 # SEPolicy
 include device/qcom/sepolicy_vndr-legacy-um/SEPolicy.mk
 include vendor/hardware/oplus/sepolicy/qti/SEPolicy.mk
-BOARD_VENDOR_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
+BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 
 # Verified Boot
 BOARD_AVB_ENABLE := true
@@ -221,4 +228,4 @@ WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Include the proprietary files BoardConfig.
-include vendor/oneplus/sm8350-common/BoardConfigVendor.mk
+include vendor/oneplus/lemonadep/BoardConfigVendor.mk
