@@ -1,23 +1,12 @@
 # Camera
 type vendor_hal_camera_extension_hwservice, hwservice_manager_type, protected_hwservice;
-
-# CWB
-type hal_cwb_hwservice, hwservice_manager_type, protected_hwservice;
+type vendor_hal_cameraMDM_hwservice, hwservice_manager_type, protected_hwservice;
 
 # Dolby
-type vendor_hal_dms_hwservice, hwservice_manager_type, protected_hwservice;
-
-# Diag
-type hal_diag_hwservice, hwservice_manager_type, protected_hwservice;
+type hal_dms_hwservice, hwservice_manager_type;
 
 # ORMS
 type vendor_hal_orms_hwservice, hwservice_manager_type, protected_hwservice;
-
-# Osense
-type hal_osense_client_hwservice, hwservice_manager_type, protected_hwservice;
-
-# Performance
-type vendor_hal_oplusPerf_hwservice, hwservice_manager_type, protected_hwservice;
 
 # Sensors
 type vendor_hal_oplusSensor_hwservice, hwservice_manager_type, protected_hwservice;

@@ -7,4 +7,5 @@ allow tri-state-key-calibrate vendor_toolbox_exec:file rx_file_perms;
 
 allow tri-state-key-calibrate mnt_vendor_file:dir search;
 
+rw_dir_file(tri-state-key-calibrate, vendor_proc_tri_state_key)
 r_dir_file(tri-state-key-calibrate, vendor_persist_engineer_file)

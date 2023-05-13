@@ -3,7 +3,8 @@
 #
 # SPDX-License-Identifier: Apache-2.0
 #
-#PRODUCT_USE_SCUDO := true
+PRODUCT_USE_SCUDO += true
+#PRODUCT_DISABLE_SCUDO := false
 
 # A/B
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/compression_with_xor.mk)
